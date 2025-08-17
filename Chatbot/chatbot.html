@@ -6,6 +6,7 @@
     <title>CareForAll</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel = "stylesheet" href = "index.css">
+    <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -32,22 +33,36 @@
           </div>
         </div>
     </nav>
+  <body>
 
-    <div class="container py-4">
-        <div class="card shadow">
-          <div class="card-header bg-primary text-white text-center fw-bold">
-            🤖 CareBot Chat
-          </div>
-          <div class="card-body chat-box d-flex flex-column chat-container" id="chatBox">
-          </div>
-          <div class="card-footer">
-            <form id="chatForm" class="d-flex gap-2">
-              <input type="text" id="userInput" class="form-control" placeholder="Type your message..." />
-              <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-          </div>
-        </div>
+    <div class="kotakchatbot">
+      <div class="judulchat text-center">
+        <h5 class="my-0">DocBot AI</h5>
       </div>
+      
+      <div class="isichat" id="isichat">
+        <div class="pesan bot">Hello! I'm DocBot. How can I help you today?</div>
+      </div>
+
+      <div class="tombolsiapsaji">
+          <p class="mb-2 text-muted">Or choose from these common questions:</p>
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-outline-secondary btn-sm" data-query="How can I schedule an appointment?">Schedule Appointment</button>
+            <button class="btn btn-outline-secondary btn-sm" data-query="What are your clinic hours?">Clinic Hours</button>
+            <button class="btn btn-outline-secondary btn-sm" data-query="What should I bring to my appointment?">What to Bring</button>
+            <button class="btn btn-outline-secondary btn-sm" data-query="Do you accept my insurance?">Insurance</button>
+          </div>
+      </div>
+      
+      <div class="ujungchat">
+        <form id="chat-form" class="input-group">
+          <input type="text" id="user-input" class="form-control" placeholder="Type your message..." aria-label="Type your message...">
+          <button class="btn btn-primary" type="submit" id="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    
+    <script src="chatbot.js"></script>
     
 </body>
 </html>
