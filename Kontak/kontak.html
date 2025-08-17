@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="kontak.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -30,48 +31,164 @@
           </div>
         </div>
     </nav>
+
+    <main class="firstpage">
+      <h1>Kontak Dokter dan Jadwalkan Konsultasi dengan Cepat</h1>
+    </main>
+
     <div class="d-flex m-3">
-        <h5>Filter : </h5>
+      <div class="d-flex m-3">
+        <h5 class="d-flex align-items-center">Gender : </h5>
         <button type="button" class="btn btn-outline-dark m-1">Pria</button>
         <button type="button" class="btn btn-outline-dark m-1">Wanita</button>
+      </div>
+      <div class="d-flex m-3">
+        <h5 class="d-flex align-items-center">Usia : </h5>
+        <button type="button" class="btn btn-outline-dark m-1">20</button>
+        <button type="button" class="btn btn-outline-dark m-1">30</button>
+        <button type="button" class="btn btn-outline-dark m-1">40</button>
+      </div>
+      <div class="d-flex m-3">
+        <h5 class="d-flex align-items-center">Harga : </h5>
+        <button type="button" class="btn btn-outline-dark m-1">0-Rp50.000</button>
+        <button type="button" class="btn btn-outline-dark m-1">Rp50.000-Rp100.000</button>
+        <button type="button" class="btn btn-outline-dark m-1">>Rp100.000</button>
+      </div>
     </div>
-      <div class="list-group">
-        <a href="#dokterumum" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="dokterumum">
-          Dokter Umum
-        </a>
 
-        <div class="collapse" id="dokterumum">
-            <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
+    <main class="secondpage">
+      <div class="card text-center mx-3">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">
+                Dokter Umum
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">
+                Spesialis Anak (Pediatri)
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">
+                Spesialis Penyakit Dalam (Internis)
+              </button>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="card-body tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+            <div class="card my-3">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex justify-content-center align-items-center p-3">
+                  <div class="plsbecircle">
+                    <img src="../Kontak/Assets/profile1.jpg" class="img-fluid rounded-circle" alt="...">
                   </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body text-start">
+                    <h4 class="card-title">
+                      dr. Anissa Rahmawati
+                      <span class="badge rounded-pill lesgoonline mx-1 fs-6"><small>🟢</small> Online</span>
+                    </h4>
+                    <h5><span class="badge kshoutlinepls text-danger">Wanita</span></h5>
+                    <p class="card-text">Lulusan Fakultas Kedokteran Universitas Indonesia (UI) pada tahun 2017</p>
+                    <p class="card-text fs-3 fw-semibold">Rp15.000</p>
+                    <div>
+                      <button type="button" class="btn btn-primary fs-5 me-4">Konsultasi Sekarang</button>
+                      <button type="button" class="btn btn-warning fs-5">Jadwalkan Saya Konsultasi</button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
+            <div class="card my-3">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex justify-content-center align-items-center p-3">
+                  <div class="plsbecircle">
+                    <img src="../Kontak/Assets/profile1.jpg" class="img-fluid rounded-circle" alt="...">
                   </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body text-start">
+                    <h4 class="card-title">
+                      dr. Anissa Rahmawati
+                      <span class="badge rounded-pill lesgoonline mx-1 fs-6"><small>🟢</small> Online</span>
+                    </h4>
+                    <h5><span class="badge kshoutlinepls text-danger">Wanita</span></h5>
+                    <p class="card-text">Lulusan Fakultas Kedokteran Universitas Indonesia (UI) pada tahun 2017</p>
+                    <p class="card-text fs-3 fw-semibold">Rp15.000</p>
+                    <div>
+                      <button type="button" class="btn btn-primary fs-5 me-4">Konsultasi Sekarang</button>
+                      <button type="button" class="btn btn-warning fs-5">Jadwalkan Saya Konsultasi</button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+      
+          <div class="tab-pane fade" id="tab2" role="tabpanel">
+            <div class="card my-3">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex justify-content-center align-items-center p-3">
+                  <div class="plsbecircle">
+                    <img src="../Kontak/Assets/profile1.jpg" class="img-fluid rounded-circle" alt="...">
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body text-start">
+                    <h4 class="card-title">
+                      dr. Anissa Rahmawati
+                      <span class="badge rounded-pill lesgoonline mx-1 fs-6"><small>🟢</small> Online</span>
+                    </h4>
+                    <h5><span class="badge kshoutlinepls text-danger">Wanita</span></h5>
+                    <p class="card-text">Lulusan Fakultas Kedokteran Universitas Indonesia (UI) pada tahun 2017</p>
+                    <p class="card-text fs-3 fw-semibold">Rp15.000</p>
+                    <div>
+                      <button type="button" class="btn btn-primary fs-5 me-4">Konsultasi Sekarang</button>
+                      <button type="button" class="btn btn-warning fs-5">Jadwalkan Saya Konsultasi</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="tab-pane fade" id="tab3" role="tabpanel">
+            <div class="card my-3">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex justify-content-center align-items-center p-3">
+                  <div class="plsbecircle">
+                    <img src="../Kontak/Assets/profile1.jpg" class="img-fluid rounded-circle" alt="...">
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body text-start">
+                    <h4 class="card-title">
+                      dr. Anissa Rahmawati
+                      <span class="badge rounded-pill lesgoonline mx-1 fs-6"><small>🟢</small> Online</span>
+                    </h4>
+                    <h5><span class="badge kshoutlinepls text-danger">Wanita</span></h5>
+                    <p class="card-text">Lulusan Fakultas Kedokteran Universitas Indonesia (UI) pada tahun 2017</p>
+                    <p class="card-text fs-3 fw-semibold">Rp15.000</p>
+                    <div>
+                      <button type="button" class="btn btn-primary fs-5 me-4">Konsultasi Sekarang</button>
+                      <button type="button" class="btn btn-warning fs-5">Jadwalkan Saya Konsultasi</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </main>
+    
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

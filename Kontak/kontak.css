@@ -1,0 +1,34 @@
+.firstpage{
+    height: 100vh;
+    width: 100vw;
+}
+
+.plsbecircle{
+    width: 100%;
+    padding-top: 100%;
+    overflow: clip;
+    position: relative;
+}
+
+.plsbecircle img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.lesgoonline {
+    color: #198754;
+    background-color: #ffffff;
+    border: 1px;
+    border-style: solid;
+    border-color: #198754;
+}
+
+.kshoutlinepls {
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
