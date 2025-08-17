@@ -1,16 +1,14 @@
 .kotakchatbot {
-    max-width: 95vw;
-    margin: 5vh auto;
-    border-radius: 10px;
     box-shadow: 0 4px 10px #0000001a;
     display: flex;
     flex-direction: column;
-    height: 80vh;
-    background-color: #f8f9fa;
+    height: 90.7 vh;
+    width: 100vw;
+    background-color: rgb(25, 25, 25);
 }
 
 .judulchat {
-    background-color: #007bff;
+    background-color: rgb(25, 25, 25);
     color: white;
     padding: 1rem;
     border-top-left-radius: 0 10px 0 10px;
@@ -34,7 +32,7 @@
 
 .pesan.user {
     align-self: flex-end;
-    background-color: #007bff;
+    background-color: gray;
     color: white;
 }
 
@@ -44,16 +42,16 @@
     color: #212529;
 }
 
-.ujungchat {
+.inputchat {
     padding: 1rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #ffffff;
-    border-top: 1px solid #dee2e6;
+    background-color: rgb(25, 25, 25);
+    border-top: 1px solid black;
 }
 
 .tombolsiapsaji {
     padding: 1rem;
-    background-color: #fff;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid black;
+    color: white;
 }
