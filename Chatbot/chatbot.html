@@ -4,9 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareForAll</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="chatbot.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        nav {
+            flex-shrink: 0;
+        }
+
+        .kotakchatbot {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 56px); /* Adjust based on navbar height */
+            width: 100%;
+            margin: auto;
+            background-color: rgb(25, 25, 25);
+            border-radius: 10px;
+            overflow: hidden;
+            flex-grow: 1;
+        }
+        
+        .judulchat {
+            background-color: rgb(25, 25, 25);
+            color: white;
+            padding: 1rem;
+            border-bottom: 1px solid black;
+            flex-shrink: 0;
+        }
+
+        .isichat {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .pesan {
+            border-radius: 15px;
+            padding: 0.75rem 1rem;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .pesan.user {
+            align-self: flex-end;
+            background-color: gray;
+            color: white;
+        }
+
+        .pesan.bot {
+            align-self: flex-start;
+            background-color: #e9ecef;
+            color: #212529;
+        }
+        
+        .inputchat {
+            padding: 1rem;
+            background-color: rgb(25, 25, 25);
+            border-top: 1px solid black;
+            flex-shrink: 0;
+        }
+        
+        .tombolsiapsaji {
+            padding: 1rem;
+            border-top: 1px solid black;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .kotakchatbot {
+                height: calc(100vh - 56px);
+                max-width: 100%;
+                border-radius: 0;
+            }
+            .judulchat, .inputchat, .tombolsiapsaji {
+                padding: 0.75rem;
+            }
+            .pesan {
+                max-width: 90%;
+                padding: 0.5rem 0.75rem;
+            }
+        }
+        
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -33,8 +126,6 @@
           </div>
         </div>
     </nav>
-  <body>
-
     <div class="kotakchatbot">
       <div class="judulchat text-center">
         <h5 class="my-0">CareDoc AI</h5>
@@ -60,8 +151,67 @@
         </form>
       </div>
     </div>
-    
-    <script src="chatbot.js"></script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      const chatForm = document.getElementById('chat-form');
+      const userInput = document.getElementById('user-input');
+      const isiChat = document.getElementById('isichat');
+      const tombolSiapSaji = document.querySelectorAll('.tombolsiapsaji .btn');
+
+      function appendMessage(sender, pesan) {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('pesan', sender);
+        messageDiv.textContent = pesan;
+        isiChat.appendChild(messageDiv);
+        isiChat.scrollTop = isiChat.scrollHeight;
+      }
+
+      function getBotResponse(pesan) {
+          const lowerCaseMessage = pesan.toLowerCase();
+          
+          if (lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hi')) {
+              return "Hello there! How can I assist you?";
+          } else if (lowerCaseMessage.includes('schedule') || lowerCaseMessage.includes('appointment')) {
+              return "You can schedule an appointment by clicking the 'Find a Doctor' button on our homepage.";
+          } else if (lowerCaseMessage.includes('hours') || lowerCaseMessage.includes('open')) {
+              return "Our clinic hours are 9 AM to 5 PM, Monday to Friday.";
+          } else if (lowerCaseMessage.includes('bring') || lowerCaseMessage.includes('what to bring')) {
+              return "Please bring your ID, insurance card, and any relevant medical records.";
+          } else if (lowerCaseMessage.includes('insurance')) {
+              return "We accept most major insurance providers. Please contact our office to verify your plan.";
+          } else if (lowerCaseMessage.includes('thank')) {
+              return "You're welcome! Feel free to ask if you have more questions.";
+          } else if (lowerCaseMessage.includes('help')) {
+              return "I can help with questions about appointments, clinic hours, and general information.";
+          } else {
+              return "I'm sorry, I didn't understand that. Can you please rephrase?";
+          }
+      }
+
+      chatForm.addEventListener('submit', function(event) {
+          event.preventDefault(); 
+          const userMessage = userInput.value.trim();
+          if (userMessage) {
+              appendMessage('user', userMessage);
+              setTimeout(() => {
+              const botMessage = getBotResponse(userMessage);
+              appendMessage('bot', botMessage);
+              }, 500); 
+              userInput.value = '';
+          }
+      });
+
+      tombolSiapSaji.forEach(button => {
+          button.addEventListener('click', function() {
+              const query = this.getAttribute('data-query');
+              appendMessage('user', query);
+              setTimeout(() => {
+                  const botMessage = getBotResponse(query);
+                  appendMessage('bot', botMessage);
+              }, 500);
+          });
+      }); 
+    </script>
 </body>
 </html>
