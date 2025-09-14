@@ -1,37 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareForAll</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel = "stylesheet" href = "nav.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akun | CareForAll</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="akun.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand nav-link active"  href="../Main Page/index.html">CareForAll</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../Kontak/kontak.html">Kontak</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="../Chatbot/chatbot.html">Chatbot</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Forum diskusi/diskusi.html">Forum Diskusi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../Akun/akun.html">Akun</a>
-              </li>
-            </ul>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="light">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-link active text-white" href="../Main Page/index.html">
+        <img src="../logo.png" alt="logo" class="logonavbar" style="height: 8vh;">
+        CareForAll
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="../Mainpage/index.html">Utama</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../Kontak/kontak.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../Chatbot/chatbot.html">Chatbot</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../Forum diskusi/diskusi.html">Forum Diskusi</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../Akun/login.html">Akun</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Wrapper untuk semua isi -->
+  <div class="dashboard-wrapper py-5 hoho">
+    <div class="container">
+      <h2 class="mb-4 text-white welcome">Selamat datang di Akun Anda</h2>
+
+      <div class="row g-4">
+        <!-- Menu 1 -->
+        <div class="col-md-4">
+          <div class="card shadow rounded">
+            <div class="card-body">
+              <h5 class="card-title">Profil</h5>
+              <p>Informasi akun Anda.</p>
+            </div>
           </div>
         </div>
-    </nav>
-    
+
+        <!-- Menu 2 -->
+        <div class="col-md-4">
+          <div class="card shadow rounded">
+            <div class="card-body">
+              <h5 class="card-title">Pengaturan</h5>
+              <p>Atur preferensi dan privasi Anda.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu 3 -->
+        <div class="col-md-4">
+          <div class="card shadow rounded">
+            <div class="card-body">
+              <h5 class="card-title">Quiz</h5>
+              <button class="btn btn-primary wkwk" data-bs-toggle="modal" data-bs-target="#quizModal">
+                Ambil quiz singkat ini! 😄
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu 4 -->
+        <div class="col-md-4">
+          <div class="card shadow rounded">
+            <div class="card-body">
+              <h5 class="card-title">Riwayat Aktivitas</h5>
+              <p>Lihat catatan aktivitas Anda.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu 5 -->
+        <div class="col-md-4">
+          <div class="card shadow rounded">
+            <div class="card-body">
+              <h5 class="card-title">Pesan</h5>
+              <p>Cek pesan dan notifikasi Anda.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu 6 -->
+        <div class="col-md-4">
+          <div class="card shadow rounded">
+            <div class="card-body">
+              <h5 class="card-title">Bantuan</h5>
+              <p>Dapatkan dukungan dan FAQ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Logout -->
+      <div class="text-center mt-5">
+        <a href="login.html" class="btn px-4 lol">Logout</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Quiz -->
+  <div class="modal fade" id="quizModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="quizForm">
+          <div class="modal-header">
+            <h5 class="modal-title lulu">Yuk Cari Tahu Seberapa Sehat Kamu!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>1. Apakah Anda merasa sehat hari ini?</p>
+            <select class="form-select mb-3" name="q1">
+              <option value="Iya">Iya</option>
+              <option value="Tidak">Tidak</option>
+            </select>
+
+            <p>2. Apakah Anda cukup tidur semalam?</p>
+            <select class="form-select mb-3" name="q2">
+              <option value="Iya">Iya</option>
+              <option value="Tidak">Tidak</option>
+            </select>
+
+            <p>3. Apakah Anda minum air putih cukup?</p>
+            <select class="form-select mb-3" name="q3">
+              <option value="Iya">Iya</option>
+              <option value="Tidak">Tidak</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success piu">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Hasil -->
+  <div class="modal fade" id="resultModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title lulu">Hasil Quiz</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="quizResult"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      const q1 = this.q1.value;
+      const q2 = this.q2.value;
+      const q3 = this.q3.value;
+
+      let score = 0;
+      if(q1 === "Iya") score++;
+      if(q2 === "Iya") score++;
+      if(q3 === "Iya") score++;
+
+      let resultText = "";
+      if(score === 3){
+        resultText = "Bagus! Anda sehat dan bugar.";
+      } else if(score === 2){
+        resultText = "Cukup baik, tapi ada yang bisa diperbaiki.";
+      } else {
+        resultText = "Perlu perhatian lebih pada kesehatan Anda.";
+      }
+
+      document.getElementById("quizResult").innerText = resultText;
+
+      // Tutup quizModal lalu buka resultModal
+      const quizModal = bootstrap.Modal.getInstance(document.getElementById("quizModal"));
+      quizModal.hide();
+
+      const resultModal = new bootstrap.Modal(document.getElementById("resultModal"));
+      resultModal.show();
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

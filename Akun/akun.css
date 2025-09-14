@@ -1,0 +1,131 @@
+   
+@font-face {
+    font-family: 'SofadiOne-Regular';
+    src:url(SofadiOne-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'ProtestGuerrilla-Regular';
+    src:url(ProtestGuerrilla-Regular.ttf);
+}
+   html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+          
+    
+    }
+
+
+    .firstpage {
+        height: 100vh;
+        width: 100vw;
+    }
+        
+
+
+    @font-face {
+        font-family: 'NerkoOne-Regular';
+        src: url('NerkoOne-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'Maleha';
+        src: url('Maleha.ttf') format('truetype');
+    }
+
+    .navbar-brand.nav-link.active.text-white {
+ font-family: 'NerkoOne-Regular';
+  font-size: 24px;
+     margin-top: 10px;
+
+}
+
+.nav-link {
+    font-family: 'Merriweather', serif;
+    font-size:17px;
+    margin-right: 10px;
+     font-weight: bold;
+     margin-top: 10px;
+}
+
+.akun {
+    margin-right: 50px;
+}
+
+.navbar-toggler {
+  border-color: white;
+  color: white;
+}
+
+.hoho {
+  min-height: 100vh;
+background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  
+    url('akun2.jpg') no-repeat center center/cover
+}
+
+.welcome {
+    font-family: 'Maleha';
+    font-size: 30px;
+    margin-top:70px;
+    text-shadow: 2px 2px 5px #7886C7;
+}
+
+.card {
+    border: none;
+    background: none;
+}
+.card-body {
+    background-color: #2D336B;
+    border-radius: 8px;
+    color: white;
+     font-family: 'Merriweather', serif;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.wkwk {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.wkwk:hover, .wkwk:active {
+    background-color: #7886C7;
+    border: none;
+}
+
+.lol {
+    background-color: white;
+    color: black;
+    border: none;
+    font-family: 'ProtestGuerrilla-Regular';
+}
+
+.lol:hover, .lol:Active { 
+    border:none;
+    background-color: #b5b1b1;
+}
+
+.modal-dialog{ 
+font-family: 'Merriweather', serif;
+}
+
+.piu {
+    background-color: #2D336B;
+    border:none;
+}
+
+.piu:hover, .piu:active {
+    background-color: #7886C7;
+    border: none;
+}
+.lulu {
+    font-weight: bold;
+}
