@@ -28,18 +28,20 @@
             height: calc(100vh - 56px);
             width: 100%;
             margin: auto;
-            background-color: rgb(25, 25, 25);
-            border-radius: 10px;
+            background-color: #7886C7;
             overflow: hidden;
             flex-grow: 1;
         }
         
         .judulchat {
-            background-color: rgb(25, 25, 25);
+            background-color: #2D336B;
             color: white;
             padding: 1rem;
-            border-bottom: 1px solid black;
             flex-shrink: 0;
+            height: 12vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .isichat {
@@ -60,31 +62,47 @@
 
         .pesan.user {
             align-self: flex-end;
-            background-color: gray;
+            background-color: #2D336B;
             color: white;
         }
 
         .pesan.bot {
             align-self: flex-start;
             background-color: #e9ecef;
-            color: #212529;
+            color: black;
         }
         
         .inputchat {
-            padding: 1rem;
-            background-color: rgb(25, 25, 25);
-            border-top: 1px solid black;
+            padding: 1rem 2rem 2rem 2rem;
             flex-shrink: 0;
+        }
+
+        .inputchat .form-control,
+        .inputchat .btn {
+            font-size: 1.25rem;
+            padding: 0.75rem 1.25rem;
         }
         
         .tombolsiapsaji {
-            padding: 1rem;
-            border-top: 1px solid black;
+            padding: 0 2rem;
             color: white;
             flex-shrink: 0;
         }
 
-        /* Responsive adjustments */
+        .tombolsiapsaji .btn {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .btn-utama {
+          background-color: #2D336B;
+          color: white;
+        }
+
+        .btn-utama:hover {
+          background-color: #4f5bbe;
+        }
+
         @media (max-width: 768px) {
             .kotakchatbot {
                 height: calc(100vh - 56px);
@@ -103,55 +121,55 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="light">
-        <div class="container-fluid">
-          <a class="navbar-brand nav-link active text-white" href="../Main Page/index.html">
-            <img src="../logo.png" alt="logo" class="logonavbar" style="height: 8vh;">
-            CareForAll
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="../Kontak/kontak.html">Kontak</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../Chatbot/chatbot.html">Chatbot</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../Forum diskusi/diskusi.html">Forum Diskusi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../Akun/akun.html">Akun</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="light">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-link active text-white" href="../Main Page/index.html">
+        <img src="../logo.png" alt="logo" class="logonavbar" style="height: 8vh;">
+        CareForAll
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="../Kontak/kontak.html">Kontak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../Chatbot/chatbot.html">Chatbot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../Forum diskusi/diskusi.html">Forum Diskusi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../Akun/akun.html">Akun</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <div class="kotakchatbot">
       <div class="judulchat text-center">
         <h5 class="my-0">CareDoc AI</h5>
       </div>
       
       <div class="isichat" id="isichat">
-        <div class="pesan bot">Hello! I'm CareDoc. How can I help you today?</div>
+        <div class="pesan bot">Halo! Saya CareDoc, AI Dokter yang siap melayani anda 24/7. Ada yang bisa saya bantu?</div>
       </div>
 
       <div class="tombolsiapsaji">
           <div class="d-flex flex-wrap gap-2">
-            <button class="btn btn-outline-secondary btn-sm" data-query="How can I schedule an appointment?">Schedule Appointment</button>
-            <button class="btn btn-outline-secondary btn-sm" data-query="What are your clinic hours?">Clinic Hours</button>
-            <button class="btn btn-outline-secondary btn-sm" data-query="What should I bring to my appointment?">What to Bring</button>
-            <button class="btn btn-outline-secondary btn-sm" data-query="Do you accept my insurance?">Insurance</button>
+            <button class="btn btn-utama btn-sm" data-query="How can I schedule an appointment?">Schedule Appointment</button>
+            <button class="btn btn-utama btn-sm" data-query="What are your clinic hours?">Clinic Hours</button>
+            <button class="btn btn-utama btn-sm" data-query="What should I bring to my appointment?">What to Bring</button>
+            <button class="btn btn-utama btn-sm" data-query="Do you accept my insurance?">Insurance</button>
           </div>
       </div>
       
       <div class="inputchat">
         <form id="chat-form" class="input-group">
           <input type="text" id="user-input" class="form-control" placeholder="Type your message..." aria-label="Type your message...">
-          <button class="btn btn-secondary" type="submit" id="send-btn">Send</button>
+          <button class="btn btn-utama" type="submit" id="send-btn">Send</button>
         </form>
       </div>
     </div>
