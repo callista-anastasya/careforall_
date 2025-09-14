@@ -1,0 +1,210 @@
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .firstpage {
+        height: 100vh;
+        width: 100vw;
+    }
+        
+  #slide2 {
+  background-size: cover;
+  background-color: #2D336B;
+  background-position: center;
+  color: white;
+  padding: 100px 20px; 
+  min-height: 100vh;
+  width: 100%; 
+}
+
+#slide2 .card {
+  border-radius: 15px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+#slide2 .card:hover {
+  transform: scale(1.05);
+  background-color: #f5f5f5;
+}
+
+    @font-face {
+        font-family: 'NerkoOne-Regular';
+        src: url('NerkoOne-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'Maleha';
+        src: url('Maleha.ttf') format('truetype');
+    }
+
+    .carousel-caption h1, .carousel-caption h3{
+  font-family: 'Maleha', sans-serif;
+  font-size: 35px;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    }   
+
+    
+@font-face {
+    font-family: 'SofadiOne-Regular';
+    src:url(SofadiOne-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'ProtestGuerrilla-Regular';
+    src:url(ProtestGuerrilla-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Rosellia';
+    src:url(Rosellia.otf);
+}
+
+@font-face {
+    font-family: 'Chicago';
+    src:url(Chicago.otf);
+}
+
+@font-face {
+    font-family: 'PR';
+    src:url(Playfull\ Rocket.ttf);
+}
+
+.carousel-caption p {
+  font-family: 'Merriweather', serif;
+}
+
+button, 
+.btn {
+  font-family: 'ProtestGuerrilla-Regular', sans-serif; 
+  font-weight: 500;  
+  font-size: 1rem;   
+}
+
+.navbar-brand.nav-link.active.text-white {
+ font-family: 'NerkoOne-Regular';
+  font-size: 24px;
+     margin-top: 10px;
+
+}
+
+.nav-link {
+    font-family: 'Merriweather', serif;
+    font-size:17px;
+    margin-right: 10px;
+     font-weight: bold;
+     margin-top: 10px;
+}
+
+.akun {
+    margin-right: 50px;
+}
+
+.navbar-toggler {
+  border-color: white;
+  color: white;
+}
+
+#slide1 {
+  min-height: 100vh;  
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), 
+    url('bg1-slide.jpg') center/cover no-repeat;
+}
+
+.display-3 {
+  font-family: "Maleha";
+  font-size: 45px;
+  text-shadow: 2px 2px 5px #7886C7;
+}
+
+.lead {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  margin-top: 20px;
+   background: #2D336B;   
+  padding: 10px 20px;    
+  border-radius: 8px;  
+  display: inline-block;
+}
+
+.lead1 {
+  font-size:12px;
+}
+
+.sakit-apa {
+  font-family: 'Maleha';
+  line-height: 60px;
+  text-decoration: underline;
+}
+
+h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size:20px;
+}
+
+#slide3 {
+  min-height: 110vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url('slide3.jpg') center/cover no-repeat;
+}
+
+.hubungi {
+  font-family: 'Maleha';
+  font-size: 45px;
+  text-shadow: 2px 2px 5px #7886C7;
+  line-height: 70px;
+}
+
+.btn-primary {
+  font-size: 25px;
+}
+
+#slide4 {
+   background-size: cover;
+  background-color: #4A5390;
+  background-position: center;
+  color: white;
+  padding: 100px 20px; 
+  min-height: 100vh;
+  width: 100%;
+}
+
+.judul4 {
+  font-family : 'Maleha';
+
+}
+
+p {
+  font-family: 'Merriweather', serif;
+}
+
+#slide4 a {
+  color: #A9B5DF;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
