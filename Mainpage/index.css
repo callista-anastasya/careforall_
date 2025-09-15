@@ -210,6 +210,10 @@ p {
   font-weight: bold;
 }
 
+#slide4 a:hover {
+  transform: scale(1.25);
+}
+
 .card-penyakit {
   height: 210px;          
   border-radius: 10px;
@@ -255,4 +259,34 @@ p {
   background-color: #7886C7;
   border: none;
   color: white;
+}
+
+.kyu:hover, kyu:active {
+  transform: scale(1.05);
+  background-color: #2D336B;
+  color:white;
+}
+
+.lanjutkan {
+  border:none;
+}
+.lanjutkan:hover, .lanjutkan:active {
+  background-color: #2D336B;
+  border: none;
+  transform: scale(1.05);
+}
+
+.lolo:hover, .logo:active {
+  border: none;
+  color: #2D336B;
+}
+
+#slide4 video {
+   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 8px; 
+}
+#slide4 video:hover {
+  transform: scale(1.05);
+  cursor: pointer; 
+  transition: transform 0.3s ease;
 }
