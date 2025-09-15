@@ -33,57 +33,215 @@
     </div>
   </nav>
 
-  <!-- Daftar Forum -->
-  <div class="container mt-5 pt-5">
-    <h3 class="text-center mb-4">Forum Diskusi</h3>
-    <div class="row g-3">
+  <div class="container mt-5 pt-5" diskusi>
+  <h3 class="text-center mb-4 juduldis">📢 Ceritakan Keluhanmu di Sini</h3>
+  <div class="row g-3">
 
-      <!-- Card Forum -->
-      <div class="col-md-6">
-        <div class="forum-card p-3 rounded shadow-sm">
-          <div class="d-flex align-items-center mb-2">
-            <img src="img/user1.png" alt="user" class="profile-pic me-2">
-            <strong>Anugrah</strong>
-          </div>
-          <h5 class="fw-bold">Sakit kepala sudah 3 hari, apa penyebabnya?</h5>
-          <p class="text-muted">Saya sudah istirahat cukup tapi kepala masih terasa berat...</p>
-          <a href="detail.html" class="btn btn-outline-primary btn-sm">Lihat Diskusi</a>
+    <!-- Card 1 -->
+    <div class="col-md-6">
+      <div class="forum-card p-3 rounded shadow-sm">
+        <div class="d-flex align-items-center mb-2">
+          <img src="img/user1.png" alt="user" class="profile-pic me-2">
+          <strong>Anugrah</strong>
         </div>
+        <h5 class="fw-bold">Sakit kepala sudah 3 hari, apa penyebabnya?</h5>
+        <p class="text-muted">Saya sudah istirahat cukup tapi kepala masih terasa berat...</p>
+        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#diskusi1">
+          Lihat Diskusi
+        </button>
       </div>
+    </div>
 
-      <div class="col-md-6">
-        <div class="forum-card p-3 rounded shadow-sm">
-          <div class="d-flex align-items-center mb-2">
-            <img src="img/user2.png" alt="user" class="profile-pic me-2">
-            <strong>Gita</strong>
-          </div>
-          <h5 class="fw-bold">Apakah batuk lebih dari 2 minggu berbahaya?</h5>
-          <p class="text-muted">Saya sudah coba obat biasa, tetapi tidak ada perubahan...</p>
-          <a href="detail.html" class="btn btn-outline-primary btn-sm">Lihat Diskusi</a>
+    <!-- Card 2 -->
+    <div class="col-md-6">
+      <div class="forum-card p-3 rounded shadow-sm">
+        <div class="d-flex align-items-center mb-2">
+          <img src="img/user2.png" alt="user" class="profile-pic me-2">
+          <strong>Gita</strong>
         </div>
+        <h5 class="fw-bold">Apakah batuk lebih dari 2 minggu berbahaya?</h5>
+        <p class="text-muted">Saya sudah coba obat biasa, tetapi tidak ada perubahan...</p>
+        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#diskusi2">
+          Lihat Diskusi
+        </button>
       </div>
+    </div>
 
+    <!-- Card 3 -->
+    <div class="col-md-6">
+      <div class="forum-card p-3 rounded shadow-sm">
+        <div class="d-flex align-items-center mb-2">
+          <img src="img/user3.png" alt="user" class="profile-pic me-2">
+          <strong>Budi</strong>
+        </div>
+        <h5 class="fw-bold">Sering merasa lelah meski sudah tidur cukup?</h5>
+        <p class="text-muted">Sudah 1 minggu saya mudah lelah walau tidur 8 jam...</p>
+        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#diskusi3">
+          Lihat Diskusi
+        </button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-6">
+      <div class="forum-card p-3 rounded shadow-sm">
+        <div class="d-flex align-items-center mb-2">
+          <img src="img/user4.png" alt="user" class="profile-pic me-2">
+          <strong>Sinta</strong>
+        </div>
+        <h5 class="fw-bold">Apakah maag bisa menyebabkan sakit dada?</h5>
+        <p class="text-muted">Saya sering merasa nyeri dada saat maag kambuh...</p>
+        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#diskusi4">
+          Lihat Diskusi
+        </button>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-md-6">
+      <div class="forum-card p-3 rounded shadow-sm">
+        <div class="d-flex align-items-center mb-2">
+          <img src="img/user5.png" alt="user" class="profile-pic me-2">
+          <strong>Rahmat</strong>
+        </div>
+        <h5 class="fw-bold">Bagaimana cara mengatasi susah tidur?</h5>
+        <p class="text-muted">Sudah beberapa hari saya susah tidur meski badan lelah...</p>
+        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#diskusi5">
+          Lihat Diskusi
+        </button>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col-md-6">
+      <div class="forum-card p-3 rounded shadow-sm">
+        <div class="d-flex align-items-center mb-2">
+          <img src="img/user6.png" alt="user" class="profile-pic me-2">
+          <strong>Lina</strong>
+        </div>
+        <h5 class="fw-bold">Sering merasa pusing saat bangun dari duduk?</h5>
+        <p class="text-muted">Setiap kali berdiri tiba-tiba kepala terasa berkunang-kunang...</p>
+        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#diskusi6">
+          Lihat Diskusi
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== MODALS ===== -->
+
+<!-- Modal 1 -->
+<div class="modal fade" id="diskusi1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <h5 class="fw-bold">Sakit kepala sudah 3 hari, apa penyebabnya?</h5>
+      <p>Saya sudah istirahat cukup tapi kepala masih terasa berat...</p>
+      <hr>
+      <h6 class="text-primary">👨‍⚕️ Tanggapan Dokter</h6>
+      <p>Sakit kepala bisa disebabkan oleh stres, kurang cairan, atau tegang otot. 
+         Jika terus berlanjut, sebaiknya periksa ke dokter.</p>
+      <button class="btn btn-secondary mt-2" data-bs-dismiss="modal">Tutup</button>
     </div>
   </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="diskusi2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <h5 class="fw-bold">Apakah batuk lebih dari 2 minggu berbahaya?</h5>
+      <p>Saya sudah coba obat biasa, tetapi tidak ada perubahan...</p>
+      <hr>
+      <h6 class="text-primary">👨‍⚕️ Tanggapan Dokter</h6>
+      <p>Batuk lebih dari 2 minggu bisa menjadi tanda infeksi paru, seperti TBC. 
+         Segera lakukan pemeriksaan jika gejala berlanjut.</p>
+      <button class="btn btn-secondary mt-2" data-bs-dismiss="modal">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="diskusi3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <h5 class="fw-bold">Sering merasa lelah meski sudah tidur cukup?</h5>
+      <p>Sudah 1 minggu saya mudah lelah walau tidur 8 jam...</p>
+      <hr>
+      <h6 class="text-primary">👨‍⚕️ Tanggapan Dokter</h6>
+      <p>Bisa disebabkan anemia, kurang nutrisi, atau masalah tiroid. 
+         Tes darah bisa membantu memastikan penyebabnya.</p>
+      <button class="btn btn-secondary mt-2" data-bs-dismiss="modal">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="diskusi4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <h5 class="fw-bold">Apakah maag bisa menyebabkan sakit dada?</h5>
+      <p>Saya sering merasa nyeri dada saat maag kambuh...</p>
+      <hr>
+      <h6 class="text-primary">👨‍⚕️ Tanggapan Dokter</h6>
+      <p>Asam lambung yang naik dapat menyebabkan nyeri dada. 
+         Perhatikan pola makan dan hindari makanan pemicu.</p>
+      <button class="btn btn-secondary mt-2" data-bs-dismiss="modal">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="diskusi5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <h5 class="fw-bold">Bagaimana cara mengatasi susah tidur?</h5>
+      <p>Sudah beberapa hari saya susah tidur meski badan lelah...</p>
+      <hr>
+      <h6 class="text-primary">👨‍⚕️ Tanggapan Dokter</h6>
+      <p>Coba atur rutinitas tidur, hindari kopi/teh malam hari, 
+         dan buat suasana kamar nyaman. Jika tetap sulit, konsultasikan.</p>
+      <button class="btn btn-secondary mt-2" data-bs-dismiss="modal">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="diskusi6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <h5 class="fw-bold">Sering merasa pusing saat bangun dari duduk?</h5>
+      <p>Setiap kali berdiri tiba-tiba kepala terasa berkunang-kunang...</p>
+      <hr>
+      <h6 class="text-primary">👨‍⚕️ Tanggapan Dokter</h6>
+      <p>Kemungkinan tekanan darah rendah atau dehidrasi. 
+         Minum cukup air dan bangun secara perlahan bisa membantu.</p>
+      <button class="btn btn-secondary mt-2" data-bs-dismiss="modal">Tutup</button>
+    </div>
+  </div>
+</div>
+
 
   <!-- Tombol Floating -->
-  <a href="#buatForum" class="btn-floating">
-    <span>+</span>
-  </a>
+<a class="btn-floating" data-bs-toggle="modal" data-bs-target="#buatForum">
+  <span>+</span>
+</a>
 
-  <!-- Modal Forum Baru (opsional) -->
-  <div class="modal fade" id="buatForum" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content p-3">
-        <h5 class="fw-bold">Buat Forum Baru</h5>
-        <form>
-          <input type="text" class="form-control mb-2" placeholder="Judul Pertanyaan">
-          <textarea class="form-control mb-2" rows="4" placeholder="Tuliskan pertanyaan Anda..."></textarea>
-          <button type="submit" class="btn btn-primary w-100">Post</button>
-        </form>
-      </div>
+<!-- Modal Forum Baru -->
+<div class="modal fade" id="buatForum" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <h5 class="fw-bold">Buat Forum Baru</h5>
+      <form>
+        <input type="text" class="form-control mb-2" placeholder="Judul Pertanyaan" required>
+        <textarea class="form-control mb-2" rows="4" placeholder="Tuliskan pertanyaan Anda..." required></textarea>
+        <button type="submit" class="btn btn-primary w-100">Post</button>
+      </form>
     </div>
   </div>
+</div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

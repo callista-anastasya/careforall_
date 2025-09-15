@@ -34,13 +34,6 @@
         src: url('Maleha.ttf') format('truetype');
     }
 
-    .navbar-brand.nav-link.active.text-white {
- font-family: 'NerkoOne-Regular';
-  font-size: 24px;
-     margin-top: 10px;
-
-}
-
 .nav-link {
     font-family: 'Merriweather', serif;
     font-size:17px;
@@ -49,9 +42,6 @@
      margin-top: 10px;
 }
 
-.akun {
-    margin-right: 50px;
-}
 
 .navbar-toggler {
   border-color: white;
@@ -98,4 +88,66 @@
     background-color: #b5b1b1;
     color: white;
 }
+
+.navbar-collapse {
+  background: transparent; 
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;  
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    border: none !important; 
+    box-shadow: none;
+  }
+}
+
+.akun {
+    margin-right: 25px;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: white; 
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #A9B5DF;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%; 
+}
+
+.hlm1 {
+  color: #A9B5DF;
+}
+
+
+.nav-link.active::after {
+  width: 100%; 
+  background-color: #A9B5DF;
+}
+
+
+.logoo {
+ font-family: 'NerkoOne-Regular';
+  font-size: 24px;
+     margin-top: 10px;
+}
+
 

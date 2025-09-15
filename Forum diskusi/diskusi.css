@@ -14,6 +14,10 @@
         padding: 0;
         height: 100%;
         overflow-x: hidden;
+        background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  
+        url('diskusi3.jpg') no-repeat center center fixed;        
+        background-size: cover;        
     }
 
 
@@ -57,3 +61,133 @@
   border-color: white;
   color: white;
 }
+
+
+.forum-card {
+  background: #A9B5DF;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Merriweather', serif;
+}
+
+.forum-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #A9B5DF;
+}
+
+.forum-card h5 {
+  color: #0f133e;
+  font-family: 'Merriweather', serif;
+}
+
+.forum-card .btn {
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.forum-card .btn:hover {
+  transform: scale(1.05);
+}
+
+
+.btn-floating {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #A9B5DF;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+
+  display: flex;         
+  align-items: center;        
+  justify-content: center;   
+
+  line-height: 1;        
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 1050;
+}
+
+
+.btn-floating:hover {
+  background-color: #2D336B;
+  transform: scale(1.15);
+}
+
+
+.modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.modal-content h5 {
+  color: #2D336B;
+  margin-bottom: 15px;
+}
+
+.modal-content .btn {
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.juduldis {
+    font-family: 'Maleha';
+    color: white;
+}
+
+.btn-outline-primary {
+  color: #2D336B;
+  border-color: #2D336B;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: #2D336B;
+  border-color: #2D336B;
+  color: #fff; 
+}
+
+.forum-card strong {
+  font-family: 'Maleha', sans-serif; 
+  font-size: 15px;
+  color: #dcdcdc;  
+}
+/* Bagian judul/tanggapan dokter di modal */
+.modal-content h6 {
+  font-family: 'Maleha', sans-serif;
+  font-weight: bold;
+  color: #2D336B; /* warna sama kayak tombol */
+  margin-bottom: 10px;
+}
+
+/* Tombol Tutup di modal */
+.btn-secondary {
+  background-color: #2D336B;
+  border-color: #2D336B;
+  color: #fff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: #1e264a; /* versi lebih gelap saat hover */
+  border-color: #1e264a;
+  color: #fff;
+}
+

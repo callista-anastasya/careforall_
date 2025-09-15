@@ -92,42 +92,14 @@ button,
   font-size: 1rem;   
 }
 
-.navbar-brand.nav-link.active.text-white {
+.logoo {
  font-family: 'NerkoOne-Regular';
   font-size: 24px;
      margin-top: 10px;
 
 }
 
-.nav-link {
-    font-family: 'Merriweather', serif;
-    font-size:17px;
-    margin-right: 10px;
-     font-weight: bold;
-     margin-top: 10px;
-}
 
-.akun {
-    margin-right: 50px;
-}
-
-.navbar-toggler {
-  border-color: white;
-  color: white;
-}
-
-#slide1 {
-  min-height: 100vh;  
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), 
-    url('bg1-slide.jpg') center/cover no-repeat;
-}
 
 .display-3 {
   font-family: "Maleha";
@@ -140,6 +112,7 @@ button,
   font-weight: bold;
   margin-top: 20px;
    background: #2D336B;   
+  font-size: 18px;
   padding: 10px 20px;    
   border-radius: 8px;  
   display: inline-block;
@@ -197,6 +170,7 @@ h6 {
 
 .judul4 {
   font-family : 'Maleha';
+  text-decoration: underline;
 
 }
 
@@ -206,6 +180,7 @@ p {
 
 #slide4 a {
   color: #A9B5DF;
+  font-size:20px;
   font-family: 'Merriweather', serif;
   font-weight: bold;
 }
@@ -290,3 +265,80 @@ p {
   cursor: pointer; 
   transition: transform 0.3s ease;
 }
+
+#slide1 {
+   background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("videoslide.gif") no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+}
+
+.judul1 {
+  line-height: 70px;
+}
+
+.navbar-collapse {
+  background: transparent; 
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;  
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    border: none !important; 
+    box-shadow: none;
+  }
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: white; 
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #A9B5DF;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%; 
+}
+
+.hlm1 {
+  color: #A9B5DF;
+}
+
+
+.nav-link.active::after {
+  width: 100%; 
+  background-color: #A9B5DF;
+}
+
+.navbar-toggler {
+  border-color: white;
+  color: white;
+}
+
+.nav-link {
+    font-family: 'Merriweather', serif;
+    font-size:17px;
+    margin-right: 10px;
+     font-weight: bold;
+     margin-top: 10px;
+}
+
