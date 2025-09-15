@@ -3,7 +3,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
-        overflow-x: hidden;
+        overflow-x: clip;
     }
 
 
@@ -26,11 +26,12 @@
   border-radius: 15px;
   transition: transform 0.2s ease;
   cursor: pointer;
+  background-color: #dbeafe;
 }
 
 #slide2 .card:hover {
   transform: scale(1.05);
-  background-color: #f5f5f5;
+  background-color: #A9B5DF;
 }
 
     @font-face {
@@ -207,4 +208,51 @@ p {
   color: #A9B5DF;
   font-family: 'Merriweather', serif;
   font-weight: bold;
+}
+
+.card-penyakit {
+  height: 210px;          
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-penyakit .card-body {
+  padding: 2px;           
+}
+
+
+.ikon-penyakit {
+  height: 75px;           
+  width: auto;
+  object-fit: contain;
+}
+
+#slide2 .sakit-apa {
+  margin-bottom: 0.25rem;
+}
+
+.bingung-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  background: linear-gradient(180deg, #fff 0%, #f7f7ff 100%);
+  color: #222;
+}
+
+.bingung-ikon {
+  width: 88px;
+  height: auto;
+  
+}
+  @media (max-width: 767px) {
+  .bingung-ikon { width: 70px; }
+  .card-penyakit { min-height: 120px; }
+}
+
+.kyu {
+  background-color: #7886C7;
+  border: none;
+  color: white;
 }

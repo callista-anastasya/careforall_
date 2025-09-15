@@ -1,0 +1,59 @@
+   
+@font-face {
+    font-family: 'SofadiOne-Regular';
+    src:url(SofadiOne-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'ProtestGuerrilla-Regular';
+    src:url(ProtestGuerrilla-Regular.ttf);
+}
+   html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .firstpage {
+        height: 100vh;
+        width: 100vw;
+    }
+        
+
+
+    @font-face {
+        font-family: 'NerkoOne-Regular';
+        src: url('NerkoOne-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'Maleha';
+        src: url('Maleha.ttf') format('truetype');
+    }
+
+    .navbar-brand.nav-link.active.text-white {
+ font-family: 'NerkoOne-Regular';
+  font-size: 24px;
+     margin-top: 10px;
+
+}
+
+.nav-link {
+    font-family: 'Merriweather', serif;
+    font-size:17px;
+    margin-right: 10px;
+     font-weight: bold;
+     margin-top: 10px;
+}
+
+.akun {
+    margin-right: 50px;
+}
+
+.navbar-toggler {
+  border-color: white;
+  color: white;
+}

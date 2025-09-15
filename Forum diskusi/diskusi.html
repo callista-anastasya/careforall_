@@ -1,37 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareForAll</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel = "stylesheet" href = "nav.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum Diskusi | CareForAll</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="diskusi.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand nav-link active" href="../Main Page/index.html">CareForAll</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../Kontak/kontak.html">Kontak</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Chatbot/chatbot.html">Chatbot</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../Forum diskusi/diskusi.html">Forum Diskusi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Akun/akun.html">Akun</a>
-              </li>
-            </ul>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="light">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-link active text-white" href="../Main Page/index.html">
+        <img src="../logo.png" alt="logo" class="logonavbar" style="height: 8vh;">
+        CareForAll
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" href="../Mainpage/index.html">Utama</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../Kontak/kontak.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../Chatbot/chatbot.html">Chatbot</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="diskusi.html">Forum Diskusi</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../Akun/login.html">Akun</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Daftar Forum -->
+  <div class="container mt-5 pt-5">
+    <h3 class="text-center mb-4">Forum Diskusi</h3>
+    <div class="row g-3">
+
+      <!-- Card Forum -->
+      <div class="col-md-6">
+        <div class="forum-card p-3 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-2">
+            <img src="img/user1.png" alt="user" class="profile-pic me-2">
+            <strong>Anugrah</strong>
           </div>
+          <h5 class="fw-bold">Sakit kepala sudah 3 hari, apa penyebabnya?</h5>
+          <p class="text-muted">Saya sudah istirahat cukup tapi kepala masih terasa berat...</p>
+          <a href="detail.html" class="btn btn-outline-primary btn-sm">Lihat Diskusi</a>
         </div>
-    </nav>
-    
+      </div>
+
+      <div class="col-md-6">
+        <div class="forum-card p-3 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-2">
+            <img src="img/user2.png" alt="user" class="profile-pic me-2">
+            <strong>Gita</strong>
+          </div>
+          <h5 class="fw-bold">Apakah batuk lebih dari 2 minggu berbahaya?</h5>
+          <p class="text-muted">Saya sudah coba obat biasa, tetapi tidak ada perubahan...</p>
+          <a href="detail.html" class="btn btn-outline-primary btn-sm">Lihat Diskusi</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Tombol Floating -->
+  <a href="#buatForum" class="btn-floating">
+    <span>+</span>
+  </a>
+
+  <!-- Modal Forum Baru (opsional) -->
+  <div class="modal fade" id="buatForum" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content p-3">
+        <h5 class="fw-bold">Buat Forum Baru</h5>
+        <form>
+          <input type="text" class="form-control mb-2" placeholder="Judul Pertanyaan">
+          <textarea class="form-control mb-2" rows="4" placeholder="Tuliskan pertanyaan Anda..."></textarea>
+          <button type="submit" class="btn btn-primary w-100">Post</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
