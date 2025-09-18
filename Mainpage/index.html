@@ -1,274 +1,225 @@
-  <!doctype html>
-  <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>CareForAll</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href = "index.css">
-      <style>
-        body, html {
-          margin: 0;
-          padding: 0;
-          scroll-behavior: smooth;
-        }
-
-        section {
-          min-height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 50px 20px;
-        }
-
-    
-
-    
-        .chatbot-btn {
-          position: fixed;
-          bottom: 20px;
-          right: 40px;
-          background: #7886C7;
-          color: white;
-          border-radius: 50%;
-          width: 60px;
-          height: 60px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 28px;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-          cursor: pointer;
-          z-index: 2000;
-        }
-        .chatbot-btn:hover {
-          background: #2D336B;
-        }
-      </style>
-
-    </head>
-    <body>
-      <!-- Navbar -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CareForAll</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+      section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+      }
+      .chatbot-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
+        background: #7886C7;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        cursor: pointer;
+        z-index: 2000;
+      }
+      .chatbot-btn:hover {
+        background: #2D336B;
+      }
+    </style>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="light">
-            <div class="container-fluid">
-              <a class="navbar-brand text-white logoo">
-                <img src="../logo.png" alt="logo" class="logonavbar" style="height: 8vh;">
-                CareForAll
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="../Mainpage/index.html" class = "hlm1">Utama</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="../Kontak/kontak.html">Kontak</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="../Chatbot/chatbot.html">Chatbot</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="../Forum diskusi/diskusi.html">Forum Diskusi</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white akun" href="../Akun/login.html">Akun</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <div class="container-fluid">
+        <a class="navbar-brand text-white logoo">
+          <img src="../logo.png" alt="logo" class="logonavbar" style="height: 8vh;">
+          CareForAll
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="../Mainpage/index.html" class="hlm1">Utama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../Kontak/kontak.html">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../Chatbot/chatbot.html">Chatbot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../Forum diskusi/diskusi.html">Forum Diskusi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white akun" href="../Akun/login.html">Akun</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <!-- Slide 1: Perkenalan -->
-      <!-- Slide 1: Perkenalan dengan Video Background -->
     <section id="slide1">
       <div class="content text-center text-white">
-      <h1 class="display-3 judul1">Selamat <br>Datang <br>di CareForAll</h1>
-    <p class="lead">“Kamu Berhak Sehat, Kami yang Wujudkan.”</p>
-  </div>
-    </div>
+        <h1 class="display-3 judul1">Selamat <br>Datang <br>di CareForAll</h1>
+        <p class="lead">“Kamu Berhak Sehat, Kami yang Wujudkan.”</p>
+      </div>
     </section>
 
-
-      <!-- Slide 2: Diagnosa (Kategori Penyakit) -->
-    <!-- ===== Slide 2: Diagnosa (Kategori Penyakit) - Versi diperbaiki ===== -->
-<section id="slide2" class="container-fluid py-5" style="background:#2D336B;">
-  <div class="container">
-    <div class="row align-items-start">
-      <!-- KIRI: Judul -->
-      <div class="col-12 col-md-4 mb-4 mb-md-0">
-        <h2 class="text-white sakit-apa" 
-            style="font-size:2rem;">
-          hai, kamu lagi sakit apa?
-        </h2>
-          <p class="text-white small">Pilih bagian tubuh yang terasa sakit untuk memulai diagnosa.</p>
-        <div class="card bingung-card mt-3" data-aos="fade-up" data-aos-delay="150">
-          <div class="card-body text-center">
-            <img src="https://cdn-icons-png.flaticon.com/512/1067/1067566.png"
-                 alt="Bingung" class="mb-2 bingung-ikon" />
-            <h5 class="card-title mb-1">Bingung Sakit Apa?</h5>
-            <p class="card-text small mb-2">
-              Tidak menemukan gejala yang cocok? Ceritakan di forum dan minta saran dari komunitas.
-            </p>
-            <a href="../Forum diskusi/diskusi.html" class="btn btn-warning btn-sm kyu">Masuk Forum Diskusi</a>
+    <section id="slide2" class="container-fluid py-5" style="background:#2D336B;">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <h2 class="text-white sakit-apa" style="font-size:2rem;">hai, kamu lagi sakit apa?</h2>
+            <p class="text-white small">Pilih bagian tubuh yang terasa sakit untuk memulai diagnosa.</p>
+            <div class="card bingung-card mt-3" data-aos="fade-up" data-aos-delay="150">
+              <div class="card-body text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/1067/1067566.png" alt="Bingung" class="mb-2 bingung-ikon">
+                <h5 class="card-title mb-1">Bingung Sakit Apa?</h5>
+                <p class="card-text small mb-2">Tidak menemukan gejala yang cocok? Ceritakan di forum dan minta saran dari komunitas.</p>
+                <a href="../Forum diskusi/diskusi.html" class="btn btn-warning btn-sm kyu">Masuk Forum Diskusi</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="row g-3">
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="kepala.png" alt="Kepala" class="img-fluid ikon-penyakit mb-2">
+                    <h6 class="m-0">Kepala</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="mata.png" alt="Mata" class="img-fluid ikon-penyakit mb-2">
+                    <h6 class="m-0">Mata</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="mulut.png" alt="Mulut & Gigi" class="img-fluid ikon-penyakit mb-2">
+                    <h6 class="m-0">Mulut & Gigi</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="telinga.png" alt="THT" class="img-fluid ikon-penyakit mb-2">
+                    <h6 class="m-0">THT</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="perut.png" alt="Pencernaan" class="img-fluid ikon-penyakit mb-2">
+                    <h6 class="m-0">Pencernaan</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="nafas.png" alt="Pernapasan" class="img-fluid ikon-penyakit mb-2">
+                    <h6 class="m-0">Pernapasan</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="kulit.png" class="img-fluid ikon-penyakit mb-2 kulit">
+                    <h6 class="m-0">Kulit</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="icons/muscle.png" alt="Otot & Sendi" class="img-fluid ikon-penyakit mb-2">
+                    <h6 class="m-0">Otot & Sendi</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="icons/heart.png" alt="Jantung & Darah" class="img-fluid ikon-penyakit mb-2">
+                    <h6 class="m-0">Jantung & Darah</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="card text-center h-100 shadow-sm">
+                  <div class="card-body py-3">
+                    <img src="icons/more.png" alt="Lainnya" class="img-fluid ikon-penyakit mb-2">
+                    <h6 class="m-0">Lainnya</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      
-      <!-- KANAN: Cards -->
-      <div class="col-12 col-md-8">
-        <div class="row g-3">
-          <!-- Card: Kepala -->
-          <div class="col-6 col-sm-4 col-md-3">
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <img src="kepala.png" alt="Kepala" class="img-fluid ikon-penyakit mb-2">
-                <h6 class="m-0">Kepala</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card: Mata (yang kamu minta) -->
-          <div class="col-6 col-sm-4 col-md-3" >
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <!-- pastikan file mata.png ada di folder yang sama -->
-                <img src="mata.png" alt="Mata" class="img-fluid ikon-penyakit mb-2">
-                <h6 class="m-0">Mata</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card: Mulut & Gigi -->
-          <div class="col-6 col-sm-4 col-md-3">
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <img src="mulut.png" alt="Mulut & Gigi" class="img-fluid ikon-penyakit mb-2">
-                <h6 class="m-0">Mulut & Gigi</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card: THT -->
-          <div class="col-6 col-sm-4 col-md-3">
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <img src="telinga.png" alt="THT" class="img-fluid ikon-penyakit mb-2">
-                <h6 class="m-0">THT</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card: Pencernaan -->
-          <div class="col-6 col-sm-4 col-md-3">
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <img src="perut.png" alt="Pencernaan" class="img-fluid ikon-penyakit mb-2">
-                <h6 class="m-0">Pencernaan</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card: Pernapasan -->
-          <div class="col-6 col-sm-4 col-md-3">
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <img src="nafas.png" alt="Pernapasan" class="img-fluid ikon-penyakit mb-2">
-                <h6 class="m-0">Pernapasan</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card: Kulit -->
-          <div class="col-6 col-sm-4 col-md-3">
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <img src="kulit.png" class="img-fluid ikon-penyakit mb-2 kulit">
-                <h6 class="m-0">Kulit</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card: Otot & Sendi -->
-          <div class="col-6 col-sm-4 col-md-3">
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <img src="icons/muscle.png" alt="Otot & Sendi" class="img-fluid ikon-penyakit mb-2">
-                <h6 class="m-0">Otot & Sendi</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card: Jantung & Darah -->
-          <div class="col-6 col-sm-4 col-md-3">
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <img src="icons/heart.png" alt="Jantung & Darah" class="img-fluid ikon-penyakit mb-2">
-                <h6 class="m-0">Jantung & Darah</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card: Lainnya -->
-          <div class="col-6 col-sm-4 col-md-3">
-            <div class="card text-center h-100 shadow-sm">
-              <div class="card-body py-3">
-                <img src="icons/more.png" alt="Lainnya" class="img-fluid ikon-penyakit mb-2">
-                <h6 class="m-0">Lainnya</h6>
-              </div>
-            </div>
-          </div>
-        </div> <!-- row g-3 -->
-      </div> <!-- col kanan -->
-    </div> <!-- row align -->
-  </div> <!-- container -->
-</section>
-
-
-
-      <!-- Slide 3: Kontak Dokter -->
-      <section id="slide3">
-        <div class="container text-center">
-          <h2 class="mb-4 hubungi" data-aos="fade-left">Hubungi <br> Dokter <br> Spesialis</h2>
-          <a href="../Kontak/kontak.html" class="btn btn-primary lanjutkan">Lanjutkan</a>
-        </div>
-      </section>
-
-      <!-- Slide 4: Video & Artikel -->
-      <section id="slide4">
-        <div class="container">
-          <h2 class="mb-4 text-center judul4">Video & Artikel Kesehatan</h2>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="ratio ratio-16x9">
-  <video width="100%" height="100%" controls>
-      <source src="animasi.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>            </div>
-            </div>
-            <div class="col-md-6 listart">
-              <ul>
-                <li ><a href="artikel1.html">Artikel 1: Cara Menjaga Imun Tubuh</a></li>
-                <P>Artikel ini membahas cara sederhana menjaga daya tahan tubuh agar tidak mudah sakit.</P>
-                <li ><a href="artikel2.html">Artikel 2: Pola Tidur Sehat</a></li>
-                <P>Artikel ini membahas cara untuk mengatur pola tidur yang baik untuk kesehatan.</P>
-                <li ><a href="artikel3.html">Artikel 3: Nutrisi untuk Otak</a></li>
-                <P>Artikel ini membahas konsumsi bahan makanan vitamin yang dapat membuat otaka tidak lemot</P>
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- Tombol Chatbot -->
-      <div class="chatbot-btn" onclick="window.location.href='../Chatbot/chatbot.html'">
-        <img src = "obrolan.png" height=" 40px;" width="auto" alt="icon obrolan">
+    <section id="slide3">
+      <div class="container text-center">
+        <h2 class="mb-4 hubungi" data-aos="fade-left">Hubungi <br> Dokter <br> Spesialis</h2>
+        <a href="../Kontak/kontak.html" class="btn btn-primary lanjutkan">Lanjutkan</a>
       </div>
-      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      
-  </html>
+    </section>
+
+    <section id="slide4">
+      <div class="container">
+        <h2 class="mb-4 text-center judul4">Video & Artikel Kesehatan</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+              <video width="50%" height="50%" controls>
+                <source src="videoo.mp4" type="video/mp4">
+                Your browser does not s the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="col-md-6 listart">
+            <ul>
+              <li><a href="artikel1.html">Artikel 1: Cara Menjaga Imun Tubuh</a></li>
+              <p>Artikel ini membahas cara sederhana menjaga daya tahan tubuh agar tidak mudah sakit.</p>
+              <li><a href="artikel2.html">Artikel 2: Pola Tidur Sehat</a></li>
+              <p>Artikel ini membahas cara untuk mengatur pola tidur yang baik untuk kesehatan.</p>
+              <li><a href="artikel3.html">Artikel 3: Nutrisi untuk Otak</a></li>
+              <p>Artikel ini membahas konsumsi bahan makanan vitamin yang dapat membuat otaka tidak lemot</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="chatbot-btn" onclick="window.location.href='../Chatbot/chatbot.html'">
+      <img src="obrolan.png" height="40px" width="auto" alt="icon obrolan">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

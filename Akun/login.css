@@ -1,47 +1,42 @@
-   
 @font-face {
-    font-family: 'SofadiOne-Regular';
-    src:url(SofadiOne-Regular.ttf);
+  font-family: 'SofadiOne-Regular';
+  src: url(SofadiOne-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'ProtestGuerrilla-Regular';
+  src: url(ProtestGuerrilla-Regular.ttf);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.firstpage {
+  height: 100vh;
+  width: 100vw;
+}
 
 @font-face {
-    font-family: 'ProtestGuerrilla-Regular';
-    src:url(ProtestGuerrilla-Regular.ttf);
+  font-family: 'NerkoOne-Regular';
+  src: url('NerkoOne-Regular.ttf');
 }
-   html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow-x: hidden;
-    }
 
-
-    .firstpage {
-        height: 100vh;
-        width: 100vw;
-    }
-        
-
-
-    @font-face {
-        font-family: 'NerkoOne-Regular';
-        src: url('NerkoOne-Regular.ttf');
-    }
-
-    @font-face {
-        font-family: 'Maleha';
-        src: url('Maleha.ttf') format('truetype');
-    }
+@font-face {
+  font-family: 'Maleha';
+  src: url('Maleha.ttf') format('truetype');
+}
 
 .nav-link {
-    font-family: 'Merriweather', serif;
-    font-size:17px;
-    margin-right: 10px;
-     font-weight: bold;
-     margin-top: 10px;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  margin-right: 10px;
+  font-weight: bold;
+  margin-top: 10px;
 }
-
 
 .navbar-toggler {
   border-color: white;
@@ -50,8 +45,7 @@
 
 .login-form {
   min-height: 100vh;
-
-    background: 
+  background: 
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  
     url('login4.jpg') no-repeat center center/cover;
 }
@@ -61,7 +55,6 @@
   min-height: 60vh;
   width: 60vh;
   border-radius: 0px;
-
 }
 
 .login {
@@ -70,27 +63,26 @@
 }
 
 .haha {
-   font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
 }
 
 .hihi {
-   font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
 }
 
 .tombol {
-    font-family: 'ProtestGuerrilla-Regular';
-    border: none;
- 
+  font-family: 'ProtestGuerrilla-Regular';
+  border: none;
 }
 
 .tombol:hover { 
-    border:none;
-    background-color: #b5b1b1;
-    color: white;
+  border: none;
+  background-color: #b5b1b1;
+  color: white;
 }
 
 .navbar-collapse {
-  background: transparent; 
+  background: transparent;
 }
 
 @media (max-width: 991px) {
@@ -107,7 +99,7 @@
 }
 
 .akun {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .nav-link {
@@ -137,17 +129,13 @@
   color: #A9B5DF;
 }
 
-
 .nav-link.active::after {
   width: 100%; 
   background-color: #A9B5DF;
 }
 
-
 .logoo {
- font-family: 'NerkoOne-Regular';
+  font-family: 'NerkoOne-Regular';
   font-size: 24px;
-     margin-top: 10px;
+  margin-top: 10px;
 }
-
-
