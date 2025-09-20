@@ -1,25 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: clip;
+}
 
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow-x: clip;
-    }
+.firstpage {
+  height: 100vh;
+  width: 100vw;
+}
 
-
-    .firstpage {
-        height: 100vh;
-        width: 100vw;
-    }
-        
-  #slide2 {
+#slide2 {
   background-size: cover;
   background-color: #2D336B;
   background-position: center;
   color: white;
-  padding: 100px 20px; 
+  padding: 100px 20px;
   min-height: 100vh;
-  width: 100%; 
+  width: 100%;
 }
 
 #slide2 .card {
@@ -34,72 +32,67 @@
   background-color: #A9B5DF;
 }
 
-    @font-face {
-        font-family: 'NerkoOne-Regular';
-        src: url('NerkoOne-Regular.ttf');
-    }
+@font-face {
+  font-family: 'NerkoOne-Regular';
+  src: url('NerkoOne-Regular.ttf');
+}
 
-    @font-face {
-        font-family: 'Maleha';
-        src: url('Maleha.ttf') format('truetype');
-    }
+@font-face {
+  font-family: 'Maleha';
+  src: url('Maleha.ttf') format('truetype');
+}
 
-    .carousel-caption h1, .carousel-caption h3{
+.carousel-caption h1, 
+.carousel-caption h3 {
   font-family: 'Maleha', sans-serif;
   font-size: 35px;
   line-height: 1.6;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-
-    }   
-
-    
-@font-face {
-    font-family: 'SofadiOne-Regular';
-    src:url(SofadiOne-Regular.ttf);
-}
-
-
-@font-face {
-    font-family: 'ProtestGuerrilla-Regular';
-    src:url(ProtestGuerrilla-Regular.ttf);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 @font-face {
-    font-family: 'Rosellia';
-    src:url(Rosellia.otf);
+  font-family: 'SofadiOne-Regular';
+  src: url(SofadiOne-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Chicago';
-    src:url(Chicago.otf);
+  font-family: 'ProtestGuerrilla-Regular';
+  src: url(ProtestGuerrilla-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'PR';
-    src:url(Playfull\ Rocket.ttf);
+  font-family: 'Rosellia';
+  src: url(Rosellia.otf);
+}
+
+@font-face {
+  font-family: 'Chicago';
+  src: url(Chicago.otf);
+}
+
+@font-face {
+  font-family: 'PR';
+  src: url(Playfull\ Rocket.ttf);
 }
 
 .carousel-caption p {
   font-family: 'Merriweather', serif;
 }
 
-button, 
+button,
 .btn {
-  font-family: 'ProtestGuerrilla-Regular', sans-serif; 
-  font-weight: 500;  
-  font-size: 1rem;   
+  font-family: 'ProtestGuerrilla-Regular', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .logoo {
- font-family: 'NerkoOne-Regular';
+  font-family: 'NerkoOne-Regular';
   font-size: 24px;
-     margin-top: 10px;
-
+  margin-top: 10px;
 }
-
-
 
 .display-3 {
   font-family: "Maleha";
@@ -111,15 +104,15 @@ button,
   font-family: 'Merriweather', serif;
   font-weight: bold;
   margin-top: 20px;
-   background: #2D336B;   
+  background: #2D336B;
   font-size: 18px;
-  padding: 10px 20px;    
-  border-radius: 8px;  
+  padding: 10px 20px;
+  border-radius: 8px;
   display: inline-block;
 }
 
 .lead1 {
-  font-size:12px;
+  font-size: 12px;
 }
 
 .sakit-apa {
@@ -131,7 +124,7 @@ button,
 h6 {
   font-family: 'Merriweather', serif;
   font-weight: bold;
-  font-size:20px;
+  font-size: 20px;
 }
 
 #slide3 {
@@ -141,10 +134,8 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url('slide3.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('slide3.jpg') center/cover no-repeat;
 }
 
 .hubungi {
@@ -159,19 +150,18 @@ h6 {
 }
 
 #slide4 {
-   background-size: cover;
+  background-size: cover;
   background-color: #4A5390;
   background-position: center;
   color: white;
-  padding: 100px 20px; 
+  padding: 100px 20px;
   min-height: 100vh;
   width: 100%;
 }
 
 .judul4 {
-  font-family : 'Maleha';
+  font-family: 'Maleha';
   text-decoration: underline;
-
 }
 
 p {
@@ -180,7 +170,7 @@ p {
 
 #slide4 a {
   color: #A9B5DF;
-  font-size:20px;
+  font-size: 20px;
   font-family: 'Merriweather', serif;
   font-weight: bold;
 }
@@ -190,7 +180,7 @@ p {
 }
 
 .card-penyakit {
-  height: 210px;          
+  height: 210px;
   border-radius: 10px;
   padding: 8px;
   display: flex;
@@ -199,12 +189,11 @@ p {
 }
 
 .card-penyakit .card-body {
-  padding: 2px;           
+  padding: 2px;
 }
 
-
 .ikon-penyakit {
-  height: 75px;           
+  height: 75px;
   width: auto;
   object-fit: contain;
 }
@@ -215,7 +204,7 @@ p {
 
 .bingung-card {
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, #fff 0%, #f7f7ff 100%);
   color: #222;
 }
@@ -223,11 +212,15 @@ p {
 .bingung-ikon {
   width: 88px;
   height: auto;
-  
 }
-  @media (max-width: 767px) {
-  .bingung-ikon { width: 70px; }
-  .card-penyakit { min-height: 120px; }
+
+@media (max-width: 767px) {
+  .bingung-ikon {
+    width: 70px;
+  }
+  .card-penyakit {
+    min-height: 120px;
+  }
 }
 
 .kyu {
@@ -236,40 +229,44 @@ p {
   color: white;
 }
 
-.kyu:hover, kyu:active {
+.kyu:hover, 
+kyu:active {
   transform: scale(1.05);
   background-color: #2D336B;
-  color:white;
+  color: white;
 }
 
 .lanjutkan {
-  border:none;
+  border: none;
 }
-.lanjutkan:hover, .lanjutkan:active {
+
+.lanjutkan:hover, 
+.lanjutkan:active {
   background-color: #2D336B;
   border: none;
   transform: scale(1.05);
 }
 
-.lolo:hover, .logo:active {
+.lolo:hover, 
+.logo:active {
   border: none;
   color: #2D336B;
 }
 
 #slide4 video {
-   transition: transform 0.5s ease, box-shadow 0.5s ease;
-  border-radius: 8px; 
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 8px;
 }
+
 #slide4 video:hover {
   transform: scale(1.05);
-  cursor: pointer; 
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 #slide1 {
-   background: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("videoslide.gif") no-repeat center center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("videoslide.gif") no-repeat center center;
   background-size: cover;
   height: 60vh;
   position: relative;
@@ -280,18 +277,18 @@ p {
 }
 
 .navbar-collapse {
-  background: transparent; 
+  background: transparent;
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
-    top: 100%;  
+    top: 100%;
     left: 0;
     width: 100%;
     padding: 15px;
-    border: none !important; 
+    border: none !important;
     box-shadow: none;
   }
 }
@@ -299,7 +296,7 @@ p {
 .nav-link {
   position: relative;
   display: inline-block;
-  color: white; 
+  color: white;
   text-decoration: none;
   padding-bottom: 5px;
 }
@@ -310,22 +307,21 @@ p {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px; 
+  height: 2px;
   background-color: #A9B5DF;
   transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
-  width: 100%; 
+  width: 100%;
 }
 
 .hlm1 {
   color: #A9B5DF;
 }
 
-
 .nav-link.active::after {
-  width: 100%; 
+  width: 100%;
   background-color: #A9B5DF;
 }
 
@@ -335,10 +331,9 @@ p {
 }
 
 .nav-link {
-    font-family: 'Merriweather', serif;
-    font-size:17px;
-    margin-right: 10px;
-     font-weight: bold;
-     margin-top: 10px;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  margin-right: 10px;
+  font-weight: bold;
+  margin-top: 10px;
 }
-
