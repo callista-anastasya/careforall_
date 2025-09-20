@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../logo.png">
+    <link rel="icon" type="image/x-icon" href="/Assets/logo.png">
     <title>CareForAll</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../nav.css">
@@ -13,7 +13,7 @@
   <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="light">
     <div class="container-fluid">
       <a class="navbar-brand text-white logoo">
-        <img src="../logo.png" alt="logo" class="logonavbar" style="height: 8vh;">
+        <img src="/Assets/logo.png" alt="logo" class="logonavbar" style="height: 8vh;">
         CareForAll
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,65 +67,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-      const chatForm = document.getElementById('chat-form');
-      const userInput = document.getElementById('user-input');
-      const isiChat = document.getElementById('isichat');
-      const tombolSiapSaji = document.querySelectorAll('.tombolsiapsaji .btn');
-
-      function appendMessage(sender, pesan) {
-        const messageDiv = document.createElement('div');
-        messageDiv.classList.add('pesan', sender);
-        messageDiv.textContent = pesan;
-        isiChat.appendChild(messageDiv);
-        isiChat.scrollTop = isiChat.scrollHeight;
-      }
-
-      function getBotResponse(pesan) {
-          const lowerCaseMessage = pesan.toLowerCase();
-          
-          if (lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hi')) {
-              return "Hello there! How can I assist you?";
-          } else if (lowerCaseMessage.includes('schedule') || lowerCaseMessage.includes('appointment')) {
-              return "You can schedule an appointment by clicking the 'Find a Doctor' button on our homepage.";
-          } else if (lowerCaseMessage.includes('hours') || lowerCaseMessage.includes('open')) {
-              return "Our clinic hours are 9 AM to 5 PM, Monday to Friday.";
-          } else if (lowerCaseMessage.includes('bring') || lowerCaseMessage.includes('what to bring')) {
-              return "Please bring your ID, insurance card, and any relevant medical records.";
-          } else if (lowerCaseMessage.includes('insurance')) {
-              return "We accept most major insurance providers. Please contact our office to verify your plan.";
-          } else if (lowerCaseMessage.includes('thank')) {
-              return "You're welcome! Feel free to ask if you have more questions.";
-          } else if (lowerCaseMessage.includes('help')) {
-              return "I can help with questions about appointments, clinic hours, and general information.";
-          } else {
-              return "I'm sorry, I didn't understand that. Can you please rephrase?";
-          }
-      }
-
-      chatForm.addEventListener('submit', function(event) {
-          event.preventDefault(); 
-          const userMessage = userInput.value.trim();
-          if (userMessage) {
-              appendMessage('user', userMessage);
-              setTimeout(() => {
-              const botMessage = getBotResponse(userMessage);
-              appendMessage('bot', botMessage);
-              }, 500); 
-              userInput.value = '';
-          }
-      });
-
-      tombolSiapSaji.forEach(button => {
-          button.addEventListener('click', function() {
-              const query = this.getAttribute('data-query');
-              appendMessage('user', query);
-              setTimeout(() => {
-                  const botMessage = getBotResponse(query);
-                  appendMessage('bot', botMessage);
-              }, 500);
-          });
-      }); 
-    </script>
+    <script src="chatbot.js"></script>
 </body>
 </html>

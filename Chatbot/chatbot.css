@@ -18,7 +18,7 @@ nav {
     height: calc(100vh - 56px);
     width: 100%;
     margin: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bgchatbot.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Assets/bgchatbot.png');
     background-size: cover;
     background-position: 50% 30%;
     overflow: hidden;

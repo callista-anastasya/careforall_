@@ -139,6 +139,11 @@ html, body {
         border-color: #7886C7;
       }
 
+      .btn-primary:hover {
+        border-color: #4f5bbe;
+        background-color: #4f5bbe !important;
+      }
+
       .btn-warning {
         background-color: #FFF2F2 !important;
         border-color: #2D336B;
@@ -168,9 +173,9 @@ html, body {
       }
 
       .btn-filter.active {
-        background-color: #0d6efd !important;
+        background-color: #4f5bbe !important;
         color: white !important;
-        border-color: #0d6efd;
+        border-color: white;
       }
 
       .filter-group .btn {
@@ -179,12 +184,12 @@ html, body {
 
     @font-face {
         font-family: 'NerkoOne-Regular';
-        src: url('../NerkoOne-Regular.ttf');
+        src: url('/Assets/NerkoOne-Regular.ttf');
     }
 
     @font-face {
         font-family: 'Maleha';
-        src: url('../Maleha.ttf') format('truetype');
+        src: url('/Assets/Maleha.ttf') format('truetype');
     }
 
     .carousel-caption h1, .carousel-caption h3{
@@ -198,13 +203,13 @@ html, body {
     
 @font-face {
     font-family: 'SofadiOne-Regular';
-    src:url(../SofadiOne-Regular.ttf);
+    src:url(/Assets/SofadiOne-Regular.ttf);
 }
 
 
 @font-face {
     font-family: 'ProtestGuerrilla-Regular';
-    src:url(../ProtestGuerrilla-Regular.ttf);
+    src:url(/Assets/ProtestGuerrilla-Regular.ttf);
 }
 
 .carousel-caption p {
