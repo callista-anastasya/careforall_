@@ -6,8 +6,8 @@ html, body {
   }
 
       .firstpage {
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
       }
       
       .carousel, .carousel-inner, .carousel-item {
@@ -80,20 +80,10 @@ html, body {
 
       @media (min-width: 768px) {
         .plsbecircle {
-            height: 100%;
-            padding-top: 100%;
-            height: auto;
+          height: 10vw;
+          width: 10vw;
+
         }
-      }
-      
-      .plsbecircle img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
       }
       
       .lesgoonline {
@@ -135,13 +125,13 @@ html, body {
       }
 
       .btn-primary {
-        background-color: #7886C7 !important;
-        border-color: #7886C7;
+        background-color: #4f5bbe !important;
+        border-color: #4f5bbe;
       }
 
       .btn-primary:hover {
-        border-color: #4f5bbe;
-        background-color: #4f5bbe !important;
+        border-color: #7886C7;
+        background-color: #7886C7 !important;
       }
 
       .btn-warning {
@@ -150,13 +140,12 @@ html, body {
       }
 
       .btn-secondary {
-        background-color: #A9B5DF !important;
-        border-color: #A9B5DF;
+        background-color: white !important;
       }
 
       .btn-secondary:hover,
       .btn-secondary:focus {
-        background-color: #7886C7 !important;
+        background-color: #A9B5DF !important;
         color: white !important;
         border-color: white;
         box-shadow: none !important;
@@ -173,7 +162,7 @@ html, body {
       }
 
       .btn-filter.active {
-        background-color: #4f5bbe !important;
+        background-color: #7886C7 !important;
         color: white !important;
         border-color: white;
       }
@@ -182,34 +171,31 @@ html, body {
         white-space: nowrap;
       }
 
-    @font-face {
-        font-family: 'NerkoOne-Regular';
-        src: url('/Assets/NerkoOne-Regular.ttf');
-    }
+      .fs-7 {
+        font-size: 0.65rem;
+      }
 
-    @font-face {
-        font-family: 'Maleha';
-        src: url('/Assets/Maleha.ttf') format('truetype');
-    }
-
-    .carousel-caption h1, .carousel-caption h3{
+/* H1 Style (Tidak Berubah - Sudah Oke) */
+.carousel-caption h1 {
   font-family: 'Maleha', sans-serif;
-  font-size: 35px;
   line-height: 1.6;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
-    }   
+  
+  /* Nilai yang sudah disepakati (1.6rem, 3vw, 2.5rem) */
+  font-size: clamp(1.6rem, 3vw, 2.5rem); 
+}   
 
-    
-@font-face {
-    font-family: 'SofadiOne-Regular';
-    src:url(/Assets/SofadiOne-Regular.ttf);
-}
-
-
-@font-face {
-    font-family: 'ProtestGuerrilla-Regular';
-    src:url(/Assets/ProtestGuerrilla-Regular.ttf);
+/* H3 Style (Dinaikkan Batas Minimumnya) */
+.carousel-caption h3 {
+  font-family: 'Maleha', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
+  
+  /* Nilai sebelumnya: clamp(1.2rem, 2vw, 1.6rem); */
+  /* Diperbarui: Min dinaikkan ke 1.4rem */
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
 }
 
 .carousel-caption p {
@@ -218,8 +204,53 @@ html, body {
 
 button, 
 .btn {
-  font-family: 'ProtestGuerrilla-Regular', sans-serif; 
+  font-family: 'Merriweather-Regular'; 
   font-weight: 500;  
   font-size: 1rem;   
 }
 
+.filter-group h5 {
+  font-family: 'Maleha';
+  font-size: 1rem;
+}
+
+#harga {
+  font-family: ProtestGuerrilla-Regular;
+}
+
+.card-title {
+  font-family: Merriweather-Regular;
+}
+
+.badge {
+  font-family: sans-serif;
+}
+
+.card-text {
+  font-family: serif;
+}
+
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url(/Assets/Merriweather-Regular.otf);
+}
+
+@font-face {
+  font-family: 'SofadiOne-Regular';
+  src:url(/Assets/SofadiOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'ProtestGuerrilla-Regular';
+  src:url(/Assets/ProtestGuerrilla-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'NerkoOne-Regular';
+  src: url('/Assets/NerkoOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Maleha';
+  src: url('/Assets/Maleha.ttf') format('truetype');
+}
