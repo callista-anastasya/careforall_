@@ -2,11 +2,15 @@
   font-family: 'SofadiOne-Regular';
   src: url(SofadiOne-Regular.ttf);
 }
-
+/* Font "Sofadi One" dibuat oleh Botjo Nikoltchev
+   Sumber: https://fonts.google.com/specimen/Sofadi+One*/
+   
 @font-face {
   font-family: 'ProtestGuerrilla-Regular';
   src: url(ProtestGuerrilla-Regular.ttf);
 }
+/* Font "Protest Guerrilla" dibuat oleh Octavio Pardo
+   Sumber: https://fonts.google.com/specimen/Protest+Guerrilla*/
 
 html, body {
   margin: 0;
@@ -27,11 +31,15 @@ html, body {
   font-family: 'NerkoOne-Regular';
   src: url('NerkoOne-Regular.ttf');
 }
+/* Font "Nerko" (Nerko One) dibuat oleh Nermin K
+   Diambil dari: https://www.dafont.com/nerko.font */
 
 @font-face {
   font-family: 'Maleha';
   src: url('Maleha.ttf') format('truetype');
 }
+/* Font "Maleha" dibuat oleh Afkari Studio.
+     Diambil dari: https://www.dafont.com/maleha.font */
 
 .navbar-brand.nav-link.active.text-white {
   font-family: 'NerkoOne-Regular';

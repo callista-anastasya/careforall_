@@ -2,11 +2,15 @@
   font-family: 'SofadiOne-Regular';
   src: url(SofadiOne-Regular.ttf);
 }
+/* Font "Sofadi One" dibuat oleh Botjo Nikoltchev
+   Sumber: https://fonts.google.com/specimen/Sofadi+One*/
 
 @font-face {
   font-family: 'ProtestGuerrilla-Regular';
   src: url(ProtestGuerrilla-Regular.ttf);
 }
+/* Font "Protest Guerrilla" dibuat oleh Octavio Pardo
+   Sumber: https://fonts.google.com/specimen/Protest+Guerrilla*/
 
 html, body {
   margin: 0;
@@ -24,11 +28,15 @@ html, body {
   font-family: 'NerkoOne-Regular';
   src: url('NerkoOne-Regular.ttf');
 }
+/* Font "Nerko" (Nerko One) dibuat oleh Nermin K
+   Diambil dari: https://www.dafont.com/nerko.font */
 
 @font-face {
   font-family: 'Maleha';
   src: url('Maleha.ttf') format('truetype');
 }
+/* Font "Maleha" dibuat oleh Afkari Studio.
+     Diambil dari: https://www.dafont.com/maleha.font */
 
 .nav-link {
   font-family: 'Merriweather', serif;
@@ -48,6 +56,8 @@ html, body {
   background: 
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  
     url('login4.jpg') no-repeat center center/cover;
+    /* Gambar ini diambil dari oleh Freepik: “Patient in doctor office - vector concept”, tersedia di Freepik. 
+     URL: https://www.freepik.com/premium-vector/patient-doctor-office-physician-medical-consulting-diagnosis-treatment-patients-hospital-healthcare-vector-concept_9813618.htm */
 }
 
 .login-box {
