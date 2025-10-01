@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'SofadiOne-Regular';
-  src: url(SofadiOne-Regular.ttf);
+  src: url(assets/SofadiOne-Regular.ttf);
 }
 /* Font "Sofadi One" dibuat oleh Botjo Nikoltchev
    Sumber: https://fonts.google.com/specimen/Sofadi+One*/
    
 @font-face {
   font-family: 'ProtestGuerrilla-Regular';
-  src: url(ProtestGuerrilla-Regular.ttf);
+  src: url(/assets/ProtestGuerrilla-Regular.ttf);
 }
-/* Font "Protest Guerrilla" dibuat oleh Octavio Pardo
-   Sumber: https://fonts.google.com/specimen/Protest+Guerrilla*/
+  /* Font "Protest Guerrilla" dibuat oleh Octavio Pardo
+    Sumber: https://fonts.google.com/specimen/Protest+Guerrilla*/
 
 html, body {
   margin: 0;
@@ -18,7 +18,9 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('diskusi3.jpg') no-repeat center center fixed;
+              url('/assets/diskusi5.jpg') no-repeat center center fixed;
+    /* Gambar diambil dari Pinterest
+   Sumber: https://i.pinimg.com/1200x/55/81/80/558180f961f4da7db384c55903ae464c.jpg */
   background-size: cover;
 }
 
@@ -29,14 +31,14 @@ html, body {
 
 @font-face {
   font-family: 'NerkoOne-Regular';
-  src: url('NerkoOne-Regular.ttf');
+  src: url('/assets/NerkoOne-Regular.ttf');
 }
 /* Font "Nerko" (Nerko One) dibuat oleh Nermin K
    Diambil dari: https://www.dafont.com/nerko.font */
 
 @font-face {
   font-family: 'Maleha';
-  src: url('Maleha.ttf') format('truetype');
+  src: url('/assets/Maleha.ttf') format('truetype');
 }
 /* Font "Maleha" dibuat oleh Afkari Studio.
      Diambil dari: https://www.dafont.com/maleha.font */
@@ -65,6 +67,8 @@ html, body {
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   font-family: 'Merriweather', serif;
+  border: 1.8px solid white;
+  border-radius: 100px;
 }
 
 .forum-card:hover {
@@ -114,6 +118,9 @@ html, body {
   transition: all 0.3s ease;
   text-decoration: none;
   z-index: 1050;
+  padding-bottom: 6px;
+  border: 1.5px solid #f7f7f7;
+  outline: none;
 }
 
 .btn-floating:hover,
@@ -155,7 +162,7 @@ html, body {
 .forum-card strong {
   font-family: 'Maleha', sans-serif;
   font-size: 15px;
-  color: #dcdcdc;
+  color: #000000;
 }
 
 .modal-content h6 {

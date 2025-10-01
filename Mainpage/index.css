@@ -70,14 +70,14 @@ html, body {
 
 @font-face {
   font-family: 'NerkoOne-Regular';
-  src: url('NerkoOne-Regular.ttf');
+  src: url('/assets/NerkoOne-Regular.ttf');
 }
 /* Font "Nerko" (Nerko One) dibuat oleh Nermin K
    Diambil dari: https://www.dafont.com/nerko.font */
 
 @font-face {
   font-family: 'Maleha';
-  src: url('Maleha.ttf') format('truetype');
+  src: url('/assets/Maleha.ttf') format('truetype');
 }
 /* Font "Maleha" dibuat oleh Afkari Studio.
      Diambil dari: https://www.dafont.com/maleha.font */
@@ -94,14 +94,14 @@ html, body {
 
 @font-face {
   font-family: 'SofadiOne-Regular';
-  src: url(SofadiOne-Regular.ttf);
+  src: url(/assets/SofadiOne-Regular.ttf);
 }
 /* Font "Sofadi One" dibuat oleh Botjo Nikoltchev
    Sumber: https://fonts.google.com/specimen/Sofadi+One*/
 
 @font-face {
   font-family: 'ProtestGuerrilla-Regular';
-  src: url(ProtestGuerrilla-Regular.ttf);
+  src: url(/assets/ProtestGuerrilla-Regular.ttf);
 }
 /* Font "Protest Guerrilla" dibuat oleh Octavio Pardo
    Sumber: https://fonts.google.com/specimen/Protest+Guerrilla*/
@@ -165,7 +165,10 @@ h6 {
   align-items: center;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url('slide3.jpg') center/cover no-repeat;
+              url('/assets/slide3.jpg') center/cover no-repeat;
+  /* Gambar diambil dari Pinterest
+   Sumber: https://i.pinimg.com/736x/44/41/68/444168b179c7bf4f7a95d6beacd4018d.jpg */
+
 }
 
 .hubungi {
@@ -184,9 +187,9 @@ h6 {
   background-color: #4A5390;
   background-position: center;
   color: white;
-  padding: 100px 20px;
-  min-height: 100vh;
-  width: 100%;
+  padding: 62px 10px;
+  min-height: 80vh;
+  width: 100%;  
 }
 
 .judul4 {
@@ -198,15 +201,20 @@ p {
   font-family: 'Merriweather', serif;
 }
 
-#slide4 a {
-  color: #A9B5DF;
-  font-size: 20px;
-  font-family: 'Merriweather', serif;
-  font-weight: bold;
-}
+  #slide4 a {
+    color: #ffffff;
+    background-color: #2D336B;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow:  4px 6px 12px rgba(240, 240, 240, 0.2)
+  }
 
 #slide4 a:hover {
-  transform: scale(1.25);
+  transform: scale(3);
 }
 
 .card-penyakit {
@@ -274,7 +282,7 @@ kyu:active {
 .lanjutkan:active {
   background-color: #2D336B;
   border: none;
-  transform: scale(1.05);
+  transform: scale(1.15);  
 }
 
 .lolo:hover, 
@@ -296,7 +304,7 @@ kyu:active {
 
 #slide1 {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("videoslide.gif") no-repeat center center;
+              url("/Assets/homee.png") no-repeat center center;
   background-size: cover;
   height: 60vh;
   position: relative;
@@ -408,3 +416,23 @@ kyu:active {
   font-family: 'Merriweather-Light';
   src: url(/Assets/Merriweather-Light.otf);
 }
+
+.lanjutkan {
+  font-size: 1.5rem;           
+  font-family: "ProtestGuerrilla-Regular", sans-serif; 
+  padding: 9px 20px;         
+}
+
+#slide4 .listart a {
+  display: inline-block;             
+  font-size: 1rem;                   
+  text-decoration: none;            
+  color: #ffffff;                   
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#slide4 .listart a:hover {
+  transform: scale(1.15);           
+  color: #ffffff;                    
+}
+

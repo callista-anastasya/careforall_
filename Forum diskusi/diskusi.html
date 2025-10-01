@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forum Diskusi | CareForAll</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/Assets/logo.png">
   <link rel="stylesheet" href="diskusi.css">
 </head>
 <body>
@@ -45,10 +46,9 @@
       <div class="col-md-6">
         <div class="forum-card p-3 rounded shadow-sm">
           <div class="d-flex align-items-center mb-2">
-            <img src="fopro7.jpg" alt="user" class="profile-pic me-2">
-            <!-- Ilustrasi seorang guru atau mentor menjelaskan konsep kepada tiga siswa, dengan laptop & bagan di belakang mereka  
-            Sumber: Freepik ― tenty_damayanti  
-            Link gambar: https://img.freepik.com/vektor-premium/seorang-guru-atau-mentor-menjelaskan-sebuah-konsep-kepada-tiga-siswa-sebuah-laptop-dan-bagan-di-belakang-mereka_123891-99138.jpg?w=360 -->
+            <img src="/assets/fopro7.jpg" alt="user" class="profile-pic me-2">
+            <!-- Gambar diambil dari Pinterest
+            Sumber: https://i.pinimg.com/736x/6a/b2/a6/6ab2a6d1736cdbe9f1a5949a1e0cbe2c.jpg -->
             <strong>Lorkan</strong>
           </div>
           <h5 class="fw-bold">Sakit kepala sudah 3 hari, apa penyebabnya?</h5>
@@ -59,7 +59,7 @@
       <div class="col-md-6">
         <div class="forum-card p-3 rounded shadow-sm">
           <div class="d-flex align-items-center mb-2">
-            <img src="fopro2.jpg" alt="user" class="profile-pic me-2">
+            <img src="/assets/fopro2.jpg" alt="user" class="profile-pic me-2">
             <!-- Gambar diambil dari Pinterest  
             Sumber: https://pin.it/54O6UMvrC -->
             <strong>Gita</strong>
@@ -72,7 +72,7 @@
       <div class="col-md-6">
         <div class="forum-card p-3 rounded shadow-sm">
           <div class="d-flex align-items-center mb-2">
-            <img src="fopro6.jpg" alt="user" class="profile-pic me-2">
+            <img src="/assets/fopro6.jpg" alt="user" class="profile-pic me-2">
             <!-- Gambar diambil dari Pinterest  
             Sumber: https://pin.it/409O7bsp9 -->
             <strong>Michael</strong>
@@ -85,7 +85,7 @@
       <div class="col-md-6">
         <div class="forum-card p-3 rounded shadow-sm">
           <div class="d-flex align-items-center mb-2">
-            <img src="fopro3.jpg" alt="user" class="profile-pic me-2">
+            <img src="/assets/fopro3.jpg" alt="user" class="profile-pic me-2">
             <!-- Gambar diambil dari Pinterest  
             Sumber: https://pin.it/5zvhoaL0H -->
             <strong>Sinta</strong>
@@ -98,7 +98,7 @@
       <div class="col-md-6">
         <div class="forum-card p-3 rounded shadow-sm">
           <div class="d-flex align-items-center mb-2">
-            <img src="fopro5.jpg" alt="user" class="profile-pic me-2">
+            <img src="/assets/fopro5.jpg" alt="user" class="profile-pic me-2">
             <!-- Gambar diambil dari Adobuddy
             Sumber: https://adobuddy.com/wp-content/uploads/2025/06/Untitled-design-11-819x1024.png -->
             <strong>Henry</strong>
@@ -111,7 +111,7 @@
       <div class="col-md-6">
         <div class="forum-card p-3 rounded shadow-sm">
           <div class="d-flex align-items-center mb-2">
-            <img src="fopro4.jpg" alt="user" class="profile-pic me-2">
+            <img src="/assets/fopro4.jpg" alt="user" class="profile-pic me-2">
             <!-- Ilustrasi seorang wanita menggunakan kalkulator & laptop di meja kerja
             Sumber: https://rekajasa.co.id/storage/images/1cce05d4-20fc-4124-92f9-f181c65f22c4-20250603160647.jpg -->
             <strong>Lina</strong>
@@ -202,9 +202,10 @@
     </div>
   </div>
 
-  <a class="btn btn-primary d-flex align-items-center justify-content-center btn-floating" style="border:none; width: 50px; height: 50px; border-radius: 50%;" data-bs-toggle="modal" data-bs-target="#buatForum">
-    <span style="font-size: 30px; line-height: 1;">+</span>
-  </a>
+ <div>
+  <<button class="btn-floating" data-bs-toggle="modal" data-bs-target="#buatForum">+</button>
+</div>
+
 
   <div class="modal fade" id="buatForum" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
