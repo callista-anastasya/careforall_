@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'SofadiOne-Regular';
-  src: url(assets/SofadiOne-Regular.ttf);
+  src: url(/Assets/SofadiOne-Regular.ttf);
 }
 /* Font "Sofadi One" dibuat oleh Botjo Nikoltchev
    Sumber: https://fonts.google.com/specimen/Sofadi+One*/
    
 @font-face {
   font-family: 'ProtestGuerrilla-Regular';
-  src: url(/assets/ProtestGuerrilla-Regular.ttf);
+  src: url(/Assets/ProtestGuerrilla-Regular.ttf);
 }
   /* Font "Protest Guerrilla" dibuat oleh Octavio Pardo
     Sumber: https://fonts.google.com/specimen/Protest+Guerrilla*/
@@ -18,7 +18,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('/assets/diskusi5.jpg') no-repeat center center fixed;
+              url('/Assets/diskusi5.jpg') no-repeat center center fixed;
     /* Gambar diambil dari Pinterest
    Sumber: https://i.pinimg.com/1200x/55/81/80/558180f961f4da7db384c55903ae464c.jpg */
   background-size: cover;
@@ -31,14 +31,14 @@ html, body {
 
 @font-face {
   font-family: 'NerkoOne-Regular';
-  src: url('/assets/NerkoOne-Regular.ttf');
+  src: url('/Assets/NerkoOne-Regular.ttf');
 }
 /* Font "Nerko" (Nerko One) dibuat oleh Nermin K
    Diambil dari: https://www.dafont.com/nerko.font */
 
 @font-face {
   font-family: 'Maleha';
-  src: url('/assets/Maleha.ttf') format('truetype');
+  src: url('/Assets/Maleha.ttf') format('truetype');
 }
 /* Font "Maleha" dibuat oleh Afkari Studio.
      Diambil dari: https://www.dafont.com/maleha.font */
