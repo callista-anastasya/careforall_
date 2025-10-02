@@ -15,21 +15,21 @@ const chatForm = document.getElementById('chat-form');
           const lowerCaseMessage = pesan.toLowerCase();
           
           if (lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hi')) {
-              return "Hello there! How can I assist you?";
-          } else if (lowerCaseMessage.includes('schedule') || lowerCaseMessage.includes('appointment')) {
-              return "You can schedule an appointment by clicking the 'Find a Doctor' button on our homepage.";
-          } else if (lowerCaseMessage.includes('hours') || lowerCaseMessage.includes('open')) {
-              return "Our clinic hours are 9 AM to 5 PM, Monday to Friday.";
-          } else if (lowerCaseMessage.includes('bring') || lowerCaseMessage.includes('what to bring')) {
-              return "Please bring your ID, insurance card, and any relevant medical records.";
-          } else if (lowerCaseMessage.includes('insurance')) {
-              return "We accept most major insurance providers. Please contact our office to verify your plan.";
-          } else if (lowerCaseMessage.includes('thank')) {
-              return "You're welcome! Feel free to ask if you have more questions.";
-          } else if (lowerCaseMessage.includes('help')) {
-              return "I can help with questions about appointments, clinic hours, and general information.";
+              return "Halo! Bagaimana saya bisa membantu Anda?";
+          } else if (lowerCaseMessage.includes('jadwalkan') || lowerCaseMessage.includes('janji temu')) {
+              return "Anda dapat menjadwalkan janji temu dengan mengeklik tombol 'Cari Dokter' di halaman beranda kami.";
+          } else if (lowerCaseMessage.includes('jam') || lowerCaseMessage.includes('buka')) {
+              return "Klinik kami buka dari pukul 9 pagi hingga 5 sore, dari hari Senin sampai Jumat.";
+          } else if (lowerCaseMessage.includes('bawa') || lowerCaseMessage.includes('apa yang dibawa')) {
+              return "Mohon bawa KTP (Kartu Tanda Penduduk) Anda, kartu asuransi, dan catatan medis yang relevan.";
+          } else if (lowerCaseMessage.includes('asuransi')) {
+              return "Kami menerima sebagian besar asuransi besar. Mohon hubungi kantor kami untuk memastikan paket Anda.";
+          } else if (lowerCaseMessage.includes('terimakasih')) {
+              return "Sama-sama! Jangan ragu untuk bertanya jika Anda punya pertanyaan lain.";
+          } else if (lowerCaseMessage.includes('tolong')) {
+              return "Saya bisa membantu dengan pertanyaan tentang janji temu, jam buka klinik, dan informasi umum.";
           } else {
-              return "I'm sorry, I didn't understand that. Can you please rephrase?";
+              return "Maaf, saya tidak paham. Tolong jelaskan lagi dengan kata-kata berbeda?";
           }
       }
 

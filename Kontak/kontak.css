@@ -1,256 +1,274 @@
-html, body {
+  html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow-x: hidden;
   }
 
-      .firstpage {
-        height: 100%;
-        width: 100%;
-      }
-      
-      .carousel, .carousel-inner, .carousel-item {
-        height: 100%;
-      }
-      
-      .carousel-item img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-      
-      .carousel-inner {
-        position: relative;
-      }
-      
-      .carousel-inner .carousel-item img {
-        position: relative;
-        z-index: 1;
-      }
-      
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 2;
-        pointer-events: none;
-      }
-      
-      .carousel-caption {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 3;
-        color: white;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-      }
+  .navbar-brand.text-white {
+    color: #ffffff !important; 
+  }
 
-      .kecilinfontlagi {
-        font-size: 0.8rem;
-      }
-      
-      .carousel-overlay {
-        background-color: rgba(0, 0, 0, 0.3);
-      }
-
-      .letitscroll .nav-link {
-        white-space: nowrap;
-      }
-
-      .letitscroll {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        overflow-y: hidden;
-      }
-      
-      .plsbecircle {
-        height: 50vw;
-        width: 50vw;
-        position: relative;
-        border-radius: 50%;
-        overflow: hidden;
-      }
-
-      @media (min-width: 768px) {
-        .plsbecircle {
-          height: 10vw;
-          width: 10vw;
-
-        }
-      }
-      
-      .lesgoonline {
-        color: #198754;
-        background-color: #ffffff;
-        border: 1px;
-        border-style: solid;
-        border-color: #198754;
-      }
-
-      .lesgooffline {
-        color: grey;
-        background-color: #ffffff;
-        border: 1px;
-        border-style: solid;
-        border-color: grey;
-      }
-      
-      .kshoutlinepls {
-        background-color: transparent;
-        border: 1px solid currentColor;
-      }
-
-      .warnabg {
-        background-color: #2D336B;
-      }
-
-      .outlinebg2 {
-        border: 2px solid #7886C7;
-      }
-
-      .card {
-        border: none !important;
-      }
-
-      .card-header .nav-link:hover {
-        color: #2D336B !important;
-        background-color: white;
-      }
-
-      .btn-primary {
-        background-color: #4f5bbe !important;
-        border-color: #4f5bbe;
-      }
-
-      .btn-primary:hover {
-        border-color: #7886C7;
-        background-color: #7886C7 !important;
-      }
-
-      .btn-warning {
-        background-color: #FFF2F2 !important;
-        border-color: #2D336B;
-      }
-
-      .btn-secondary {
-        background-color: white !important;
-      }
-
-      .btn-secondary:hover,
-      .btn-secondary:focus {
-        background-color: #A9B5DF !important;
-        color: white !important;
-        border-color: white;
-        box-shadow: none !important;
-      }
-
-      .jgngantiheight {
-        white-space: nowrap;
-        font-size: clamp(10px, 3vw, 18px);
-        min-height: 52px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
-
-      .btn-filter.active {
-        background-color: #7886C7 !important;
-        color: white !important;
-        border-color: white;
-      }
-
-      .filter-group .btn {
-        white-space: nowrap;
-      }
-
-      .fs-7 {
-        font-size: 0.65rem;
-      }
-
-/* H1 Style (Tidak Berubah - Sudah Oke) */
-.carousel-caption h1 {
-  font-family: 'Maleha', sans-serif;
-  line-height: 1.6;
-  color: #fff;
-  text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
+  .firstpage {
+    height: 100vh;
+    width: 100%;
+  }
   
-  /* Nilai yang sudah disepakati (1.6rem, 3vw, 2.5rem) */
-  font-size: clamp(1.6rem, 3vw, 2.5rem); 
-}   
-
-/* H3 Style (Dinaikkan Batas Minimumnya) */
-.carousel-caption h3 {
-  font-family: 'Maleha', sans-serif;
-  line-height: 1.6;
-  color: #fff;
-  text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
+  .carousel, .carousel-inner, .carousel-item {
+    height: 100%;
+  }
   
-  /* Nilai sebelumnya: clamp(1.2rem, 2vw, 1.6rem); */
-  /* Diperbarui: Min dinaikkan ke 1.4rem */
-  font-size: clamp(1.4rem, 2vw, 1.6rem);
-}
+  .carousel-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .carousel-inner {
+    position: relative;
+  }
+  
+  .carousel-inner .carousel-item img {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 3;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    max-width: 90%; 
+  }
 
-.carousel-caption p {
-  font-family: 'Merriweather', serif;
-}
+  .kecilinfontlagi {
+    font-size: 0.8rem;
+  }
+  
+  .carousel-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 
-button, 
-.btn {
-  font-family: 'Merriweather-Regular'; 
-  font-weight: 500;  
-  font-size: 1rem;   
-}
+  .letitscroll .nav-link {
+    white-space: nowrap;
+  }
 
-.filter-group h5 {
-  font-family: 'Maleha';
-  font-size: 1rem;
-}
+  .letitscroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+  }
+  
+  .plsbecircle {
+    height: 50vw;
+    width: 50vw;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 
-#harga {
-  font-family: ProtestGuerrilla-Regular;
-}
+  @media (min-width: 768px) {
+    .plsbecircle {
+      height: 10vw;
+      width: 10vw;
 
-.card-title {
-  font-family: Merriweather-Regular;
-}
+    }
+  }
+  
+  .lesgoonline {
+    color: #198754;
+    background-color: #ffffff;
+    border: 1px;
+    border-style: solid;
+    border-color: #198754;
+  }
 
-.badge {
-  font-family: sans-serif;
-}
+  .lesgooffline {
+    color: grey;
+    background-color: #ffffff;
+    border: 1px;
+    border-style: solid;
+    border-color: grey;
+  }
+  
+  .kshoutlinepls {
+    background-color: transparent;
+    border: 1px solid currentColor;
+  }
 
-.card-text {
-  font-family: serif;
-}
+  .warnabg {
+    background-color: #2D336B;
+  }
 
-@font-face {
-  font-family: 'Merriweather-Regular';
-  src: url(/Assets/Merriweather-Regular.otf);
-}
+  .outlinebg2 {
+    border: 2px solid #7886C7;
+  }
 
-@font-face {
-  font-family: 'SofadiOne-Regular';
-  src:url(/Assets/SofadiOne-Regular.ttf);
-}
+  .card {
+    border: none !important;
+  }
 
-@font-face {
-  font-family: 'ProtestGuerrilla-Regular';
-  src:url(/Assets/ProtestGuerrilla-Regular.ttf);
-}
+  .card-header .nav-link:hover {
+    color: #2D336B !important;
+    background-color: white;
+  }
 
-@font-face {
-  font-family: 'NerkoOne-Regular';
-  src: url('/Assets/NerkoOne-Regular.ttf');
-}
+  .btn-primary {
+    background-color: #4f5bbe !important;
+    border-color: #4f5bbe;
+  }
 
-@font-face {
-  font-family: 'Maleha';
-  src: url('/Assets/Maleha.ttf') format('truetype');
-}
+  .btn-primary:hover {
+    border-color: #7886C7;
+    background-color: #7886C7 !important;
+  }
+
+  .btn-warning {
+    background-color: #FFF2F2 !important;
+    border-color: #2D336B;
+  }
+
+  .btn-secondary {
+    background-color: white !important;
+  }
+
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    background-color: #A9B5DF !important;
+    color: white !important;
+    border-color: white;
+    box-shadow: none !important;
+  }
+
+  .jgngantiheight {
+    white-space: nowrap;
+    font-size: clamp(10px, 3vw, 18px);
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .btn-filter.active {
+    background-color: #7886C7 !important;
+    color: white !important;
+    border-color: white;
+  }
+
+  .filter-group .btn {
+    white-space: nowrap;
+  }
+
+  .fs-7 {
+    font-size: 0.65rem;
+  }
+
+  .carousel-caption h1 {
+    font-family: 'Maleha', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
+    font-size: clamp(1.6rem, 3vw, 2.5rem); 
+  }   
+
+  .carousel-caption h3 {
+    font-family: 'Maleha', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
+  }
+
+  .carousel-caption p {
+    font-family: 'Merriweather', serif;
+  }
+
+  button, 
+  .btn {
+    font-family: 'Merriweather-Regular'; 
+    font-weight: 500;  
+    font-size: 1rem;   
+  }
+
+  .filter-group h5 {
+    font-family: 'Maleha';
+    font-size: 1rem;
+  }
+
+  #harga {
+    font-family: Merriweather-Regular;
+    font-weight: 500;
+  }
+
+  .card-title {
+    font-family: Merriweather-Regular;
+  }
+
+  .badge {
+    font-family: sans-serif;
+  }
+
+  .card-text {
+    font-family: serif;
+  }
+
+  @font-face {
+    font-family: 'Merriweather-Regular';
+    src: url(/Assets/Merriweather-Regular.otf);
+  }
+  /* This license can also be found at this permalink: https://www.fontsquirrel.com/license/merriweather
+
+  Copyright 2016 The Merriweather Project Authors (https://github.com/EbenSorkin/Merriweather), with Reserved Font Name “Merriweather”.
+
+
+  This Font Software is licensed under the SIL Open Font License, Version 1.1.
+  This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+
+  —————————————————————————————-
+  SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+  —————————————————————————————- */
+
+  @font-face {
+    font-family: 'SofadiOne-Regular';
+    src:url(/Assets/SofadiOne-Regular.ttf);
+  }
+  /* Font "Sofadi One" dibuat oleh Botjo Nikoltchev
+   Sumber: https://fonts.google.com/specimen/Sofadi+One */
+
+  @font-face {
+    font-family: 'ProtestGuerrilla-Regular';
+    src:url(/Assets/ProtestGuerrilla-Regular.ttf);
+  }
+  /* Font "Protest Guerrilla" dibuat oleh Octavio Pardo
+   Sumber: https://fonts.google.com/specimen/Protest+Guerrilla*/
+
+  @font-face {
+    font-family: 'NerkoOne-Regular';
+    src: url('/Assets/NerkoOne-Regular.ttf');
+  }
+  /* Font "Nerko" (Nerko One) dibuat oleh Nermin K
+   Diambil dari: https://www.dafont.com/nerko.font */
+
+  @font-face {
+    font-family: 'Maleha';
+    src: url('/Assets/Maleha.ttf') format('truetype');
+  }
+  /* Font "Maleha" dibuat oleh Afkari Studio.
+  Diambil dari: https://www.dafont.com/maleha.font */
