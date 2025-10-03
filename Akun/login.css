@@ -156,6 +156,14 @@ html, body {
   background: rgba(0, 0, 0, 0.6); 
   max-width: 400px;  
   width: 100%;      
+  
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    min-height: auto;     
+    padding-top: 100px; 
+  }
 }
 
 @media (max-width: 576px) {
