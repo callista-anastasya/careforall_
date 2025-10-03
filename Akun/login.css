@@ -159,17 +159,13 @@ html, body {
   
 }
 
-@media (max-width: 768px) {
-  .login-container {
-    min-height: auto;     
-    padding-top: 100px; 
-  }
-}
 
 @media (max-width: 576px) {
   .login-box {
-    max-width: 100%;  
+    max-width: 90%;  
     border-radius: 0;  
+    height: auto;
+    padding: 1.2rem;     
   }
 }
 
