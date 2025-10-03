@@ -406,11 +406,12 @@ kyu:active {
 }
 
 .kotakhasil h5 {
-  font-family: Merriweather-Light;
+  font-family: sofadi-one;
 }
 
 .kotakhasil p, li {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Merriweather-Light;
+  font-size:12px;
 }
 
 @font-face {
@@ -435,5 +436,23 @@ kyu:active {
 #slide4 .listart a:hover {
   transform: scale(1.15);           
   color: #ffffff;                    
+}
+
+.hihi {
+  font-family: NerkoOne-Regular;
+  font-size: 23px !important;
+  text-align: center;
+}
+
+#modal-question{
+  font-family:  'Merriweather';
+  font-size: 21px !important;
+  font-weight: bold;
+}
+
+.answer-btn{
+  font-family:  'Merriweather';
+  font-size: 17px !important;
+  font-weight: 200;
 }
 

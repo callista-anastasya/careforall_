@@ -1,274 +1,324 @@
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-  }
-
-  .navbar-brand.text-white {
-    color: #ffffff !important; 
-  }
-
-  .firstpage {
-    height: 100vh;
-    width: 100%;
-  }
-  
-  .carousel, .carousel-inner, .carousel-item {
-    height: 100%;
-  }
-  
-  .carousel-item img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .carousel-inner {
-    position: relative;
-  }
-  
-  .carousel-inner .carousel-item img {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 2;
-    pointer-events: none;
-  }
-  
-  .carousel-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    z-index: 3;
-    color: white;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-    max-width: 90%; 
-  }
-
-  .kecilinfontlagi {
-    font-size: 0.8rem;
-  }
-  
-  .carousel-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .letitscroll .nav-link {
-    white-space: nowrap;
-  }
-
-  .letitscroll {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    overflow-y: hidden;
-  }
-  
-  .plsbecircle {
-    height: 50vw;
-    width: 50vw;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-
-  @media (min-width: 768px) {
-    .plsbecircle {
-      height: 10vw;
-      width: 10vw;
-
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
     }
+
+    .navbar-brand.text-white {
+      color: #ffffff !important; 
+    }
+
+    .firstpage {
+      height: 100vh;
+      width: 100%;
+    }
+    
+    .carousel, .carousel-inner, .carousel-item {
+      height: 100%;
+    }
+    
+    .carousel-item img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .carousel-inner {
+      position: relative;
+    }
+    
+    .carousel-inner .carousel-item img {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 2;
+      pointer-events: none;
+    }
+    
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      z-index: 3;
+      color: white;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+      max-width: 90%; 
+    }
+
+    .kecilinfontlagi {
+      font-size: 0.8rem;
+    }
+    
+    .carousel-overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .letitscroll .nav-link {
+      white-space: nowrap;
+    }
+
+    .letitscroll {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+    }
+    
+    .plsbecircle {
+      height: 50vw;
+      width: 50vw;
+      position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+      .plsbecircle {
+        height: 10vw;
+        width: 10vw;
+
+      }
+    }
+    
+    .lesgoonline {
+      color: #198754;
+      background-color: #ffffff;
+      border: 1px;
+      border-style: solid;
+      border-color: #198754;
+    }
+
+    .lesgooffline {
+      color: grey;
+      background-color: #ffffff;
+      border: 1px;
+      border-style: solid;
+      border-color: grey;
+    }
+    
+    .kshoutlinepls {
+      background-color: transparent;
+      border: 1px solid currentColor;
+    }
+
+    .warnabg {
+      background-color: #2D336B;
+    }
+
+    .outlinebg2 {
+      border: 2px solid #7886C7;
+    }
+
+    .card {
+      border: none !important;
+    }
+
+    .card-header .nav-link:hover {
+      color: #2D336B !important;
+      background-color: white;
+    }
+
+    .btn-primary {
+      background-color: #4f5bbe !important;
+      border-color: #4f5bbe;
+    }
+
+    .btn-primary:hover {
+      border-color: #7886C7;
+      background-color: #7886C7 !important;
+    }
+
+    .btn-warning {
+      background-color: #FFF2F2 !important;
+      border-color: #2D336B;
+    }
+
+    .btn-secondary {
+      background-color: white !important;
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+      background-color: #A9B5DF !important;
+      color: white !important;
+      border-color: white;
+      box-shadow: none !important;
+    }
+
+    .jgngantiheight {
+      white-space: nowrap;
+      font-size: clamp(10px, 3vw, 18px);
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-right: 120px;
+      border-radius: 20px
+    }
+
+    
+    .btn-filter.active {
+      background-color: #7886C7 !important;
+      color: white !important;
+      border-color: white;
+    }
+
+    .filter-group .btn {
+      white-space: nowrap;
+    }
+
+    .fs-7 {
+      font-size: 0.65rem;
+    }
+
+    .carousel-caption h1 {
+      font-family: 'Maleha', sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
+      font-size: clamp(1.8rem, 5vw, 2.5rem); 
+    }   
+
+    .carousel-caption h3 {
+      font-family: 'Maleha', sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
+      font-size: clamp(1.6rem, 4vw, 1.8rem);
+    }
+
+    @media (max-width: 576px) {
+      .carousel-caption h1 {
+          font-size: 10rem;
+      }
+      .carousel-caption h3 {
+          font-size: 1.7rem;
+      }
   }
-  
-  .lesgoonline {
-    color: #198754;
-    background-color: #ffffff;
-    border: 1px;
-    border-style: solid;
-    border-color: #198754;
+
+
+    .carousel-caption p {
+      font-family: 'Merriweather', serif;
+    }
+
+    
+    @media (max-width: 576px) {
+      .carousel-caption p {
+        font-size: 15px;
+      }
   }
 
-  .lesgooffline {
-    color: grey;
-    background-color: #ffffff;
-    border: 1px;
-    border-style: solid;
-    border-color: grey;
-  }
-  
-  .kshoutlinepls {
-    background-color: transparent;
-    border: 1px solid currentColor;
-  }
+    .button, .btn 
+    {
+      font-family: 'Merriweather-Regular'; 
+      font-weight:500;  
+      font-size: 1rem;   
+    }
 
-  .warnabg {
-    background-color: #2D336B;
-  }
+    .filter-group h5 {
+      font-family: 'Maleha';
+      font-size: 1rem;
+    }
 
-  .outlinebg2 {
-    border: 2px solid #7886C7;
-  }
+    #harga {
+      font-family: 'Merriweather';
+      font-weight: 500;
+    }
 
-  .card {
-    border: none !important;
-  }
+    .card-title {
+      font-family: 'Merriweather';
+      font-weight: bold;
+      font-size:24px;
+    }
 
-  .card-header .nav-link:hover {
-    color: #2D336B !important;
-    background-color: white;
-  }
+    .badge {
+      font-family: sans-serif;
+    }
 
-  .btn-primary {
-    background-color: #4f5bbe !important;
-    border-color: #4f5bbe;
-  }
+    .card-text {
+      font-family: serif;
+    }
 
-  .btn-primary:hover {
-    border-color: #7886C7;
-    background-color: #7886C7 !important;
-  }
+    @font-face {
+      font-family: 'Merriweather-Regular';
+      src: url(/Assets/Merriweather-Regular.otf);
+    }
+    /* This license can also be found at this permalink: https://www.fontsquirrel.com/license/merriweather
 
-  .btn-warning {
-    background-color: #FFF2F2 !important;
-    border-color: #2D336B;
-  }
+    Copyright 2016 The Merriweather Project Authors (https://github.com/EbenSorkin/Merriweather), with Reserved Font Name “Merriweather”.
 
-  .btn-secondary {
-    background-color: white !important;
-  }
 
-  .btn-secondary:hover,
-  .btn-secondary:focus {
-    background-color: #A9B5DF !important;
-    color: white !important;
-    border-color: white;
-    box-shadow: none !important;
-  }
+    This Font Software is licensed under the SIL Open Font License, Version 1.1.
+    This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
 
-  .jgngantiheight {
-    white-space: nowrap;
-    font-size: clamp(10px, 3vw, 18px);
-    min-height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+    —————————————————————————————-
+    SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+    —————————————————————————————- */
 
-  .btn-filter.active {
-    background-color: #7886C7 !important;
-    color: white !important;
-    border-color: white;
-  }
+    @font-face {
+      font-family: 'SofadiOne-Regular';
+      src:url(/Assets/SofadiOne-Regular.ttf);
+    }
+    /* Font "Sofadi One" dibuat oleh Botjo Nikoltchev
+    Sumber: https://fonts.google.com/specimen/Sofadi+One */
 
-  .filter-group .btn {
-    white-space: nowrap;
-  }
+    @font-face {
+      font-family: 'ProtestGuerrilla-Regular';
+      src:url(/Assets/ProtestGuerrilla-Regular.ttf);
+    }
+    /* Font "Protest Guerrilla" dibuat oleh Octavio Pardo
+    Sumber: https://fonts.google.com/specimen/Protest+Guerrilla*/
 
-  .fs-7 {
-    font-size: 0.65rem;
-  }
+    @font-face {
+      font-family: 'NerkoOne-Regular';
+      src: url('/Assets/NerkoOne-Regular.ttf');
+    }
+    /* Font "Nerko" (Nerko One) dibuat oleh Nermin K
+    Diambil dari: https://www.dafont.com/nerko.font */
 
-  .carousel-caption h1 {
-    font-family: 'Maleha', sans-serif;
-    line-height: 1.6;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
-    font-size: clamp(1.6rem, 3vw, 2.5rem); 
-  }   
+    @font-face {
+      font-family: 'Maleha';
+      src: url('/Assets/Maleha.ttf') format('truetype');
+    }
+    /* Font "Maleha" dibuat oleh Afkari Studio.
+    Diambil dari: https://www.dafont.com/maleha.font */
 
-  .carousel-caption h3 {
-    font-family: 'Maleha', sans-serif;
-    line-height: 1.6;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 128, 255, 0.7);
-    font-size: clamp(1.4rem, 2vw, 1.6rem);
+  .komunitas-text {
+      text-align: center; 
+      font-size: 18px;
+      font-weight: 500;
   }
 
-  .carousel-caption p {
-    font-family: 'Merriweather', serif;
+  .muu {
+    font-family: maleha;
   }
 
-  button, 
-  .btn {
-    font-family: 'Merriweather-Regular'; 
-    font-weight: 500;  
-    font-size: 1rem;   
+  .card img {
+  max-width: 100%;
+}
+
+  .jgngantiheight:nth-of-type(1) {
+    background-color: #2D336B !important;
+    border-color: #2D336B !important;
   }
 
-  .filter-group h5 {
-    font-family: 'Maleha';
-    font-size: 1rem;
-  }
-
-  #harga {
-    font-family: Merriweather-Regular;
-    font-weight: 500;
-  }
-
-  .card-title {
-    font-family: Merriweather-Regular;
-  }
-
-  .badge {
-    font-family: sans-serif;
-  }
-
-  .card-text {
-    font-family: serif;
-  }
-
-  @font-face {
-    font-family: 'Merriweather-Regular';
-    src: url(/Assets/Merriweather-Regular.otf);
-  }
-  /* This license can also be found at this permalink: https://www.fontsquirrel.com/license/merriweather
-
-  Copyright 2016 The Merriweather Project Authors (https://github.com/EbenSorkin/Merriweather), with Reserved Font Name “Merriweather”.
+  .jgngantiheight:nth-of-type(2) {
+  background-color: rgb(255, 255, 255) !important;
+  border-color: rgb(0, 0, 0) !important;
+}
 
 
-  This Font Software is licensed under the SIL Open Font License, Version 1.1.
-  This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+   
 
-  —————————————————————————————-
-  SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
-  —————————————————————————————- */
-
-  @font-face {
-    font-family: 'SofadiOne-Regular';
-    src:url(/Assets/SofadiOne-Regular.ttf);
-  }
-  /* Font "Sofadi One" dibuat oleh Botjo Nikoltchev
-   Sumber: https://fonts.google.com/specimen/Sofadi+One */
-
-  @font-face {
-    font-family: 'ProtestGuerrilla-Regular';
-    src:url(/Assets/ProtestGuerrilla-Regular.ttf);
-  }
-  /* Font "Protest Guerrilla" dibuat oleh Octavio Pardo
-   Sumber: https://fonts.google.com/specimen/Protest+Guerrilla*/
-
-  @font-face {
-    font-family: 'NerkoOne-Regular';
-    src: url('/Assets/NerkoOne-Regular.ttf');
-  }
-  /* Font "Nerko" (Nerko One) dibuat oleh Nermin K
-   Diambil dari: https://www.dafont.com/nerko.font */
-
-  @font-face {
-    font-family: 'Maleha';
-    src: url('/Assets/Maleha.ttf') format('truetype');
-  }
-  /* Font "Maleha" dibuat oleh Afkari Studio.
-  Diambil dari: https://www.dafont.com/maleha.font */
